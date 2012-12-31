@@ -13,7 +13,7 @@ a:hover {
   display: inline-table;
   color:white;
 }
-#location ul {
+#locations ul {
   min-width:986px;
 }
 #locations li.continent {
