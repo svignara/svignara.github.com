@@ -13,6 +13,9 @@ a:hover {
   display: inline-table;
   color:white;
 }
+#location ul {
+  min-width:986px;
+}
 #locations li.continent {
   padding:5px 23px;
   background-color: black;
