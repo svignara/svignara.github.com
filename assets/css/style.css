@@ -1,6 +1,7 @@
 body {
   padding-top:40px;
+  background-color:#ECECEC;
 }
-#aboutme .unstyled {
-  margin:10px 0 0 20px;
+#aboutme{
+  padding-top:40px;
 }
