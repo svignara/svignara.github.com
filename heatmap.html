@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tornados of 2011 | Suvi's Projects</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="projects/heatmap/style.css">     
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=visualization"></script>
+    <script type="text/javascript" src="projects/heatmap/2011_tornados.json"></script>
+  </head>
+  <body onload="initialize()">
+    <h1>Tornados in the USA : Year 2011</h1>
+    <a id="submit" class="btn btn-primary" href="#">Start TimeLine</a>
+    <div id="map"></div>
+    <div id="results">
+      <table class="table table-bordered table-striped">      
+        <thead><tr><td>Month</td><td>No. of Tornados</td></tr></thead>
+        <tr class="info"><td class="month">January</td><td class="tornado"></td></tr>
+        <tr><td class="month">February</td><td class="tornado"></td></tr>
+        <tr><td class="month">March</td><td class="tornado"></td></tr>
+        <tr><td class="month">April</td><td class="tornado"></td></tr>
+        <tr><td class="month">May</td><td class="tornado"></td></tr>
+        <tr><td class="month">June</td><td class="tornado"></td></tr>
+        <tr><td class="month">July</td><td class="tornado"></td></tr>
+        <tr><td class="month">August</td><td class="tornado"></td></tr>
+        <tr><td class="month">September</td><td class="tornado"></td></tr>
+        <tr><td class="month">October</td><td class="tornado"></td></tr>
+        <tr><td class="month">November</td><td class="tornado"></td></tr>
+        <tr><td class="month">December</td><td class="tornado"></td></tr>        
+      </table>      
+    </div>    
+    <div id="credits">Total Number of Tornados per Month in the USA during 2011 (data obtained from <a href="http://www.spc.noaa.gov/wcm/">NOAA's National Weather Service: Storm Prediction Center</a>)</div>  
+    <script src="http://code.jquery.com/jquery-latest.js"></script>        
+    <script type='text/javascript' src='projects/heatmap/script.js'></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
