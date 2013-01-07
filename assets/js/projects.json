@@ -1,0 +1,113 @@
+var projects = [
+    {"name": "World Population",
+     "link": "worldpopulation.html",
+     "desc":{
+        "title":"Description:",
+        "content":"This project displays the populations of countries around the world using Google's Data Visualization"
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"Google Data Visualization: Geochart"
+        }]
+      },
+     "files":{
+        "title":"Relevant Files:",
+        "items":[
+          {"title":"worldpopulation-main.js",
+           "snippet":"Handled the loading of the Google Data Visualization tool, and initiating the geochart with the population data."
+          },
+          {"title":"worldpopulation-ui.js",
+           "snippet":"Handled user interactions with the application (i.e. changing location from the navigation menu)"}
+        ]
+      },
+     "notes":"Notes: The population data used was obtained from Wikipedia's List of Countries by Population as of Dec 30 2012"
+    },
+    {"name": "Comparison of Geolocation Methods",
+     "link": "geolocation.html",
+     "desc":{
+        "title":"Description:",
+        "content":"This project compares 4 (of the many) Geolocation methods that are available today."
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"Google Maps API (and Geocode API)"
+        },
+        {
+          "snippet":"HTML5 Geolocation"
+        },
+        {
+          "snippet":"Google Client Location Loader"
+        },
+        {
+          "snippet":"FreeGeoIP Service"
+        },
+        {
+          "snippet":"HostIP.info Service"
+        }
+        ]
+      },
+     "files":{
+        "title":"Relevant Files:",
+        "items":[
+          {"title":"script.js",
+           "snippet":"Handled the loading of Google Maps and obtaining user location from all geolocation methods."
+          }
+        ]
+      },
+     "notes":""
+    },
+    {"name": "Twitter Stream User Timeline",
+     "link": "twitterstream.html",
+     "desc":{
+        "title":"Description:",
+        "content":"This project was just put together to test out Twitter's Streaming API. It lets you search for any public user's recent 10 tweets."
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"Twitter API"
+        }]
+      },
+     "files":{
+        "title":"Relevant Files:",
+        "items":[
+          {"title":"script.js",
+           "snippet":"Handles the user input and sends a request to the Twitter service to get the tweets of the specified Twitter handle."
+          }
+        ]
+      },
+     "notes":""
+    },
+    {"name": "Visualization of USA Tornados in 2011",
+     "link": "heatmap.html",
+     "desc":{
+        "title":"Description:",
+        "content":"Using the Heatmap Layer in Google Maps API, I developed a visualization of Tornado intensity for each month of 2011. The visualization can be used to analyze areas that were hot spots for Tornado outbreaks and during which time of year they were prone to tornado occurrences."
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"Google Maps API"
+        },
+        {
+          "snippet":"Heatmap Layer Library"
+        }]
+      },
+     "files":{
+        "title":"Relevant Files:",
+        "items":[
+          {"title":"script.js",
+           "snippet":"Handles initialization of the map and heatmap layer. Takes care of the timeline visualization of the tornado intensity on the map."
+          },
+          {
+            "title":"2011_tornados.json",
+            "snippet":"The file with entire data of tornado occurrences in the USA during 2011. It was actually in a .csv format which I then converted to json - this .csv file (obtained from <a href='http://www.spc.noaa.gov/wcm/' target='_blank'>NOAA's National Weather Service: Storm Prediction Center</a>) is also in the repo, it was editted to only include the relevant information for the json that I needed for the heatmap layer."
+          }
+        ]
+      },
+     "notes":""
+    }
+    
+  ];
