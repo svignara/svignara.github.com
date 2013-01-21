@@ -11,4 +11,5 @@ Current Applications:
 ### To Do ###
 
 >Clean up `assets/js/main.js`
+
 >Work on an app that combines twitter streaming API, Heatmap Layers and Data Visualization
