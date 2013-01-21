@@ -1,0 +1,22 @@
+var networks = [
+    {"name": "Twitter",
+     "link": "//twitter.com/suvi_v",
+     "toolTip": "Follow me on Twitter",
+     "imgsrc": "assets/images/glyphicons_411_twitter.png"
+    },
+    {"name": "LinkedIn",
+     "link": "//www.linkedin.com/in/svignarajah",
+     "toolTip": "Connect with me on LinkedIn",
+     "imgsrc": "assets/images/glyphicons_397_linked_in.png"
+    },
+    {"name": "Google+",
+     "link": "//plus.google.com/117762890357185510789/",
+     "toolTip": "Add me to your circle",
+     "imgsrc": "assets/images/glyphicons_382_google_plus.png"
+    },
+    {"name": "Github",
+     "link": "//github.com/svignara",
+     "toolTip": "Fork me on Github",
+     "imgsrc": "assets/images/glyphicons_401_github.png"
+    }
+  ];

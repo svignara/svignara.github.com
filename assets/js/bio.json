@@ -1,0 +1,26 @@
+var bio = [
+    {
+      "type":"Name",
+      "value":"Suvethan Vignarajah (Suvi for short)"
+    },
+    {
+      "type":"School",
+      "value":"University of Waterloo"
+    },
+    {
+      "type":"Program",
+      "value":"Geomatics Major, Computer Science Minor"
+    },
+    {
+      "type":"Degree",
+      "value":"Bachelor of Environmental Studies"
+    },
+    {
+      "type":"Interests",
+      "value":"<ul><li>Music</li><li>Photography</li><li>Exploring the city</li><li>Gaming on my XBox (NBA 2K, NHL, FIFA, BlackOps, Halo, Kinect Sports, Just Dance - to name a few)</li><li>And rooting for my favorite Toronto teams (Raptors, Maple Leafs and Blue Jays)!</li></ul>"
+    },
+    {
+      "type":"Favorite Quote",
+      "value":"<blockquote><p>Impossible is just a big word thrown around by small men who find it easier to live in the world they've been given than to explore the power they have to change it. Impossible is not a fact. It's an opinion. Impossible is not a declaration. It's a dare. Impossible is potential. Impossible is temporary. <b>Impossible is nothing.</b></p><small>Muhammad Ali</small></blockquote>"
+    }
+  ];

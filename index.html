@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="ngSanitize">
   <head>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Suvi's Github Pages</title>
@@ -12,47 +12,54 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/bio.json"></script>
+    <script src="assets/js/skills.json"></script>    
+    <script src="assets/js/experiences.json"></script>
+    <script src="assets/js/networks.json"></script>   
     <script src="assets/js/projects.json"></script>
+    
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.min.js"></script>
     <script src="assets/js/controllers.js"></script>
-        
+
   </head>
-  <body data-spy="scroll" data-target=".navbar" ng-controller="ProjectEntriesCtrl">
+  <body data-spy="scroll" data-target=".navbar">
     <!-- Responsive Navbar -->
     <div class="navbar navbar-fixed-top navbar">
       <div class="navbar-inner">
         <div class="container">
-     
+
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-     
+
           <!-- Be sure to leave the brand out there if you want it shown -->
           <a class="brand" href="//github.com/svignara">Suvi's GitHub Home</a>
-     
+
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
             <!-- .nav, .navbar-search, .navbar-form, etc -->
             <ul class="nav">
-              <li class="active"><a href="#projects">Projects</a></li>
-              <li><a href="#aboutme">About Me</a></li>
-            </ul>            
+                <li class="active"><a href="#projects">Projects</a></li>
+                <li><a href="#aboutme">About Me</a></li>                
+            </ul>
           </div>
-     
+
         </div>
       </div>
     </div>
-    
+
     <!-- body container  -->
     <div class="container">
-        <div id="projects" class="row-fluid">
+        
+        <div id="projects" class="row-fluid" ng-controller="ProjectEntriesCtrl">
             <h1>Projects</h1>
             <p>Below are a list of projects that I just mash together to try out some of the cool new APIs out there.</p>
-            <p>You'll find a link to the project, a brief description of the project, the technologies that are used, relevant files and any other notes.</p>            
+            <p>You'll find a link to the project, a brief description of the project, the technologies that are used, relevant files and any other notes.</p>
             <form class="form-search form-horizontal">
               <label class="control-label" for="searchInput">Filter Projects by Keyword:</label>
               <input id="searchInput" type="text" class="input-medium search-query" ng-model="query" placeholder="Keywords...">
@@ -71,30 +78,104 @@
                         <li ng-repeat="files in project.files.items">{{files.title}}<p ng-bind-html="files.snippet"></p></li>
                     </ul>
                     <p><b>{{project.notes}}</b></p>
-                </div>                
+                </div>
             </div>
         </div>
         
         <div id="aboutme" class="row-fluid">
             <h1>About Me</h1>
-            <div class="alert alert-info alert-block">
-            <h2>Coming Soon...</h2>
-            <p class="lead">Stay tuned, I will be describing a little about myself in this section.</p>
-            <p class="lead">For the time being please feel free to checkout the following:</p>
-            <ul class="unstyled">
-                <li><a href="//twitter.com/suvi_v">Twitter</a></li>
-                <li><a href="//ca.linkedin.com/pub/suvethan-suvi-vignarajah/37/28/484/">LinkedIn</a></li>
-                <li><a href="//plus.google.com/117762890357185510789/">Google+</a></li>
-                <li><a href="//stackoverflow.com/users/1417588/suvi-vignarajah">Stackoverflow</a></li>
-                <li><a href="//jsfiddle.net/user/svigna/fiddles/">Jsfiddle</a></li>
-                <li><a href="//github.com/svignara">Github</a></li>
-            </ul>
+
+            <div id="aboutme-container" class="well well-large container-fluid">
+              <div class="row-fluid">
+                <div id="profile-pic-holder" class="span2">
+                    <img src="assets/images/suvi.png" id="profile-pic" class="img-polaroid">
+                </div>
+                <div class="span10">
+                    <div id="aboutme-tabs" class="tabbable"> <!-- Only required for left/right tabs -->
+                      <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Bio</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Skills</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Experiences</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Let's Connect</a></li>
+                      </ul>
+
+                      <div class="tab-content">
+                        
+                        <div class="tab-pane active" id="tab1">
+                            <table class="table table-bordered table-hover" ng-controller="BioCtrl">
+                                <tr ng-repeat="info in bio">
+                                    <td>{{info.type}}</td>
+                                    <td ng-bind-html="info.value"></td>
+                                </tr>                                
+                            </table>
+                        </div>
+                        
+                        <div class="tab-pane" id="tab2">
+                            <table class="table table-bordered table-hover" ng-controller="SkillsCtrl">
+                                <tr ng-repeat="skill in skills">
+                                    <td>{{skill.heading}}</td>
+                                    <td>
+                                        <ul>
+                                            <li ng-repeat="specificSkill in skill.specificSkills" ng-bind-html="specificSkill.name"></li>
+                                        </ul>
+                                    </td>
+                                </tr>                                
+                            </table>
+                        </div>
+                        
+                        <div class="tab-pane" id="tab3" ng-controller="ExperiencesCtrl">                           
+                            <div class="control">
+                                <button class="btn btn-mini btn-primary on" type="button">Expand All</button>
+                                <button class="btn btn-mini btn-danger" type="button">Collapse All</button>
+                            </div>
+                            
+                            <div class="experience well well-small" ng-repeat="exp in experiences">
+                              <div class="experience-heading">
+                                <a data-toggle="collapse" data-parent="" href="{{exp.contentRef}}">
+                                    <h4>{{exp.role}}</h4>
+                                    <p class="lead">{{exp.company}}</p>
+                                    <p class="muted">{{exp.tenure}}</p>
+                                </a>
+                              </div>
+                              <div id="{{exp.contentId}}" class="collapse">
+                                <div class="accordion-inner experience-body">
+                                    <ul>
+                                        <li ng-repeat="responsibility in exp.responsibilities">{{responsibility.desc}}</li>                                        
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="control bottom">
+                                <button class="btn btn-mini btn-primary on" type="button">Expand All</button>
+                                <button class="btn btn-mini btn-danger" type="button">Collapse All</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="tab4" ng-controller="NetworksCtrl">
+                            <div class="well connections">
+                            <ul class="unstyled">
+                                <li ng-repeat="network in networks"><a rel="tooltip" data-placement="right" data-original-title="{{network.toolTip}}" href="{{network.link}}" target="_blank"><img ng-src="{{network.imgsrc}}" class="img-circle"><span>{{network.name}}</span></a></li>
+                                <li><a rel="tooltip" data-placement="right" data-original-title="Check out some of my public fiddles" href="//jsfiddle.net/user/svigna/fiddles/" target="_blank">Jsfiddle</a></li>
+                            </ul>
+                            <a rel="tooltip" data-placement="right" data-original-title="Check out my StackOverflow profile" href="http://stackoverflow.com/users/1417588/suvi-vignarajah" target="_blank">
+                                <img src="http://stackoverflow.com/users/flair/1417588.png?theme=clean" width="208" height="58" alt="profile for Suvi Vignarajah at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Suvi Vignarajah at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                            </a>
+                            </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
+        
     </div>
-    
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,56 @@
+var skills = [
+    {
+      "heading":"Web Development",
+      "specificSkills":[
+        {
+          "name":"HTML(5)"
+        },
+        {
+          "name":"CSS(3)"
+        },
+        {
+          "name":"Javascript + JS MVC Frameworks, jQuery, nodeJS"
+        },
+        {
+          "name":"PHP"
+        },
+        {
+          "name":"A slew of APIs"
+        }
+      ]
+    },
+    {
+      "heading":"Database",
+      "specificSkills":[
+        {
+          "name":"MySQL"
+        },
+        {
+          "name":"SQL Server"
+        },
+        {
+          "name":"Geospatial Datasets"
+        },
+        {
+          "name":"MongoDB"
+        }
+      ]
+    },
+    {
+      "heading":"Mapping Technologies",
+      "specificSkills":[
+        {
+          "name":"ArcGIS 9.x, 10 Desktop Products"
+        },
+        {
+          "name":"ENVI Software - <em>Image Processing & Analysis</em>"
+        },
+        {
+          "name":"PCI Geomatica"
+        },
+        {
+          "name":"Web mapping: Google Maps API, AcrGIS Javascript API"
+        }
+      ]
+    }
+  ];
