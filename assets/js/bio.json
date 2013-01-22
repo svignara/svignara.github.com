@@ -16,6 +16,10 @@ var bio = [
       "value":"Bachelor of Environmental Studies"
     },
     {
+      "type":"Certifications",
+      "value":"Diploma of Excellence in Geographic Information Systems"
+    },
+    {
       "type":"Interests",
       "value":"<ul><li>Music</li><li>Photography</li><li>Exploring the city</li><li>Gaming on my XBox (NBA 2K, NHL, FIFA, BlackOps, Halo, Kinect Sports, Just Dance - to name a few)</li><li>And rooting for my favorite Toronto teams (Raptors, Maple Leafs and Blue Jays)!</li></ul>"
     },
