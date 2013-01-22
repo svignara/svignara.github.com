@@ -13,11 +13,12 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     
+    <script src="assets/js/projects.json"></script>
+    <script src="assets/js/tabs.json"></script>
     <script src="assets/js/bio.json"></script>
     <script src="assets/js/skills.json"></script>    
     <script src="assets/js/experiences.json"></script>
     <script src="assets/js/networks.json"></script>   
-    <script src="assets/js/projects.json"></script>
     
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.min.js"></script>
@@ -91,12 +92,9 @@
                     <img src="assets/images/suvi-profile.png" id="profile-pic" class="img-polaroid">
                 </div>
                 <div class="span10">
-                    <div id="aboutme-tabs" class="tabbable"> <!-- Only required for left/right tabs -->
+                    <div id="aboutme-tabs" class="tabbable" ng-controller="TabsCtrl"> <!-- Only required for left/right tabs -->
                       <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab1" data-toggle="tab">Bio</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Skills</a></li>
-                        <li><a href="#tab3" data-toggle="tab">Experiences</a></li>
-                        <li><a href="#tab4" data-toggle="tab">Let's Connect</a></li>
+                        <li ng-repeat="tab in tabs" class="{{tab.activeClass}}"><a href="{{tab.ref}}" data-toggle="tab">{{tab.heading}}</a></li>
                       </ul>
 
                       <div class="tab-content">
