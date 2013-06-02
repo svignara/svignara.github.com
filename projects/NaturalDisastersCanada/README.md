@@ -48,7 +48,7 @@ The `curl` object performs the request to the passed URL, and in the callback fu
 
 The data obtained is initiated as markers on the map, but also passed into the markerclusterer object to cluster markers in close bounds together. The markers are also passed into the overlappingmarkerspiderifier object, which handles markers that occur on the same lat/lng (Figure 1).
 
-![overlappingmarkerspiderifier](images/screenshots/overlappingmarkerspiderifier.png "Figure 1")
+![overlappingmarkerspiderifier](img/screenshots/overlappingmarkerspiderifier.png "Figure 1")
 
 Figure 1.
 
