@@ -137,7 +137,7 @@ var projects = [
         "title":"Project Explanation:",
         "items":[
           {"title":"README.md",
-           "snippet":"A more detailed explanation can be found in the project's readme file <a href=''>here</a>."
+           "snippet":"A more detailed explanation can be found in the project's readme file <a href='//github.com/svignara/svignara.github.com/tree/master/projects/NaturalDisastersCanada'>here</a>."
           }
         ]
       },
