@@ -23,6 +23,9 @@ html, body, .row-fluid,
 #contentContainer .page-header{
 	margin-bottom:1px;
 }
+#heading p {
+	line-height: 0.8em;
+}
 #queryForm .control-label {
 	width:80px;
 }
