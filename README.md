@@ -8,4 +8,5 @@ Current Applications:
 - World Population
 - Geolocation methods
 - Twitter User Timeline Streaming
-- Natural Disasters - Canada
+- Tornados 2011 - Google Heatmap Layer
+- Natural Disasters in Canada
