@@ -108,6 +108,40 @@ var projects = [
         ]
       },
      "notes":""
+    },
+    {"name": "Natural Disasters - Canada",
+     "link": "naturaldisasters.html",
+     "desc":{
+        "title":"Description:",
+        "content":"This application provides a visual of historic records of natural disasters in Canada. The data is obtained from the <a href='http://cdd.publicsafety.gc.ca/srchpg-eng.aspx' target='_blank'>Canadian Disaster Database</a>."
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"NodeJS"
+        },
+        {
+          "snippet":"Google Maps API"
+        },
+        {
+          "snippet":"markerClusterer"
+        },
+        {
+          "snippet":"overlappingmarkerspiderifier"
+        },
+        {
+          "snippet":"AngularJS"
+        }]
+      },
+     "files":{
+        "title":"Project Explanation:",
+        "items":[
+          {"title":"README.md",
+           "snippet":"A more detailed explanation can be found in the project's readme file <a href=''>here</a>."
+          }
+        ]
+      },
+     "notes":""
     }
     
   ];

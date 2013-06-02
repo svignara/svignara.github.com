@@ -69,7 +69,7 @@
                 <div class="row-fluid" ng-repeat="project in projects | filter:query">
                     <h2><a href="{{project.link}}" target="_blank">{{project.name}}</a></h2>
                     <h3>{{project.desc.title}}</h3>
-                    <p>{{project.desc.content}}</p>
+                    <p ng-bind-html="project.desc.content"></p>
                     <h3>{{project.tech.title}}</h3>
                     <ul>
                       <li ng-repeat="techs in project.tech.items">{{techs.snippet}}</li>

@@ -1,0 +1,106 @@
+html, body, .row-fluid,
+#contentContainer,
+#mapContainer,
+#mapCanvas { 
+	height: 100%;
+	overflow-y:hidden; 
+}
+.row-fluid {
+	min-width:940px;
+}
+.row-fluid .span3 {
+	width:30%;
+}
+.row-fluid .span9 {
+	width:70%;
+	margin-left:0;
+}
+#contentContainer {
+	padding:0 15px;
+	background-color: #efefef;
+	position:relative;
+}
+#contentContainer .page-header{
+	margin-bottom:1px;
+}
+#queryForm .control-label {
+	width:80px;
+}
+#queryForm .controls {
+	margin-left:100px;
+}
+#timePeriod > p + div{
+	margin-bottom:15px;
+}
+#triggerListSlide {
+	position: absolute;
+	top: -25px;
+	left: 70%;
+	background-color: #fff;
+	padding: 5px 15px;
+}
+#triggerListSlide a:hover{
+	text-decoration: none;
+}
+#triggerListSlide .open-text,
+#triggerListSlide .close-text {
+	display:none;
+}
+#triggerListSlide.open-state .open-text,
+#triggerListSlide.close-state .close-text {
+	display:block;
+}
+#eventsListContainer {
+	position:absolute;
+	bottom:0px;
+	height:0px;
+	background-color:#fff;
+	width: 100%;
+	margin-left: -15px;
+	display:none;
+}
+#eventsListContainer h2,
+#resultFilters{
+	padding-left:25px;
+}
+#resultFilters {
+	margin-bottom:25px;
+}
+#resultFilters div,
+#resultFilters label {
+	display:inline-block;
+	position:relative;
+}
+#totalResults {
+	top:4px;
+}
+#filterResults {
+	float:right;
+	right:15px;
+}
+#filterResults select {
+	margin-bottom:0;
+	width:120px;
+}
+#eventsList {
+	overflow-y:auto;
+	height:79%;
+	border-top: 1px solid #e0e0e0;
+	clear:both;
+}
+#eventsList ul {
+	margin:0px;
+}
+#eventsList li {
+	list-style:none;
+	padding-left: 25px;
+	border-bottom:1px solid #eaeaea;
+}
+#mapContainer {
+	padding:15px;
+	box-shadow: 0 0 20px #999;
+	position:relative;
+}
+#mapCanvas img {
+	max-width:none;
+}
