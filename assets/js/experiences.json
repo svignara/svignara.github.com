@@ -1,8 +1,16 @@
 var experiences = [
     {
+      "role":"Programmer (GIS & Data Services)",
+      "company":"University of Toronto",
+      "tenure":"August 2013 - Present",
+      "contentRef":"#collapse1",
+      "contentId":"collapse1",
+      "responsibilities":[]
+    },
+    {
       "role":"Interactive Developer",
       "company":"SapientNitro",
-      "tenure":"February 2012 - Present",
+      "tenure":"February 2012 - August 2013",
       "contentRef":"#collapse1",
       "contentId":"collapse1",
       "responsibilities":[
