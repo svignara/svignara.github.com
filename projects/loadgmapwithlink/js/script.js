@@ -5,9 +5,9 @@
 	var urlMapOptions = {};
 
 	if (hash && hash.substr(0,2) === '#_'){
-		console.log(hash);
+		//console.log(hash);
 		urlMapOptions = URLON.parse(hash.substr(1, hash.length));
-		console.log(urlMapOptions);		
+		//console.log(urlMapOptions);		
 	}
 
 	var map;
