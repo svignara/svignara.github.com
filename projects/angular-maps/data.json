@@ -1,0 +1,27 @@
+//Data
+var cities = [
+    {
+        name : 'Toronto',
+        team : 'Maple Leafs',
+        lat : 43.7000,
+        long : -79.4000
+    },
+    {
+        name : 'New York',
+        team : 'Rangers',
+        lat : 40.6700,
+        long : -73.9400
+    },
+    {
+        name : 'Chicago',
+        team : 'Blackhawks',
+        lat : 41.8819,
+        long : -87.6278
+    },
+    {
+        name : 'Los Angeles',
+        team : 'Kings',
+        lat : 34.0500,
+        long : -118.2500
+    }
+];
