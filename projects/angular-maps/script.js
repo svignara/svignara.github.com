@@ -3,8 +3,8 @@ angular.module('mapsApp', [])
 
 		var mapOptions = {
 			zoom: 4,
-			center: new google.maps.LatLng(55, -100),
-			mapTypeId: google.maps.MapTypeId.TERRAIN
+			center: new google.maps.LatLng(45, -100),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}
 
 		$scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -40,5 +40,4 @@ angular.module('mapsApp', [])
         	google.maps.event.trigger(selectedMarker, 'click');
     	}
 
-		console.log($scope);
 	});

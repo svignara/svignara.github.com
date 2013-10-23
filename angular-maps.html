@@ -9,13 +9,19 @@
     <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="projects/angular-maps/data.json"></script>
     <style>
-      html, body, .container, #map{
+      html, body, .container, #map, #side-panel{
         height:100%;
+      }
+      #side-panel {
+        overflow-y:auto;
+      }
+      .city {
+        cursor: pointer;
       }
     </style>
   </head>
   <body ng-app="mapsApp" ng-controller="MapsCtrl">
-    <div class="col-md-4">
+    <div id="side-panel" class="col-md-4">
       <div class="page-header">
         <h1>Google Maps API with AngularJS <small>A small sample of binding markers in Google Maps the external links using AngularJS</small></h1>        
       </div>
@@ -28,7 +34,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="city in cities" ng-click="openInfoWindow($event, city)">
+          <tr ng-repeat="city in cities | orderBy : 'name'" ng-click="openInfoWindow($event, city)" class="city">
             <td>{{city.name}}</td>
             <td>{{city.team}}</td>
           </tr>  

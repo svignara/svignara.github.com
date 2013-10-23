@@ -3,25 +3,181 @@ var cities = [
     {
         name : 'Toronto',
         team : 'Maple Leafs',
-        lat : 43.7000,
-        long : -79.4000
+        lat : 43.643156,
+        long : -79.379614
     },
     {
         name : 'New York',
         team : 'Rangers',
-        lat : 40.6700,
-        long : -73.9400
+        lat : 40.750524,
+        long : -73.993352
     },
     {
         name : 'Chicago',
         team : 'Blackhawks',
-        lat : 41.8819,
-        long : -87.6278
+        lat : 41.881017,
+        long : -87.674142
     },
     {
         name : 'Los Angeles',
         team : 'Kings',
-        lat : 34.0500,
-        long : -118.2500
+        lat : 34.043076,
+        long : -118.26701
+    },
+    {
+        name : 'Boston',
+        team : 'Bruins',
+        lat : 42.365346,
+        long : -71.062385
+    },
+    {
+        name : 'Buffalo',
+        team : 'Sabres',
+        lat : 42.875036,
+        long : -78.87611
+    },
+    {
+        name : 'Detroit',
+        team : 'Red Wings',
+        lat : 42.325174,
+        long : -83.051322
+    },
+    {
+        name : 'Florida',
+        team : 'Panthers',
+        lat : 26.159598,
+        long : -80.325469
+    },
+    {
+        name : 'Montreal',
+        team : 'Canadiens',
+        lat : 45.496331,
+        long : -73.570035
+    },
+    {
+        name : 'Ottawa',
+        team : 'Senators',
+        lat : 43.251986,
+        long : -79.806622
+    },
+    {
+        name : 'Tampa Bay',
+        team : 'Lightning',
+        lat : 27.94274,
+        long : -82.451709
+    },
+    {
+        name : 'Carolina',
+        team : 'Hurricanes',
+        lat : 35.80344,
+        long : -78.721894
+    },
+    {
+        name : 'Columbus',
+        team : 'Blue Jackets',
+        lat : 39.969276,
+        long : -83.006004
+    },
+    {
+        name : 'New Jersey',
+        team : 'Devils',
+        lat : 40.733438,
+        long : -74.171025
+    },
+    {
+        name : 'New York',
+        team : 'Islanders',
+        lat : 40.722998,
+        long : -73.590721
+    },
+    {
+        name : 'Philadelphia',
+        team : 'Flyers',
+        lat : 39.901243,
+        long : -75.171897
+    },
+    {
+        name : 'Pittsburgh',
+        team : 'Penguins',
+        lat : 40.439174,
+        long : -79.98972
+    },
+    {
+        name : 'Washington',
+        team : 'Capitals',
+        lat : 38.898014,
+        long : -77.020901
+    },
+    {
+        name : 'Anaheim',
+        team : 'Ducks',
+        lat : 33.807804,
+        long : -117.876481
+    },
+    {
+        name : 'Calgary',
+        team : 'Flames',
+        lat : 51.037427,
+        long : -114.051994
+    },
+    {
+        name : 'Edmonton',
+        team : 'Oilers',
+        lat : 53.572174,
+        long : -113.455192
+    },
+    {
+        name : 'Phoenix',
+        team : 'Coyotes',
+        lat : 33.531987,
+        long : -112.261158
+    },
+    {
+        name : 'San Jose',
+        team : 'Sharks',
+        lat : 37.332802,
+        long : -121.901171
+    },
+    {
+        name : 'Vancouver',
+        team : 'Canucks',
+        lat : 49.277689,
+        long : -123.108076
+    },
+    {
+        name : 'Colorado',
+        team : 'Avalanche',
+        lat : 39.748955,
+        long : -105.006341
+    },
+    {
+        name : 'Dallas',
+        team : 'Stars',
+        lat : 32.790413,
+        long : -96.810368
+    },
+    {
+        name : 'Minnesota',
+        team : 'Wild',
+        lat : 44.944162,
+        long : -93.100852
+    },
+    {
+        name : 'Nashville',
+        team : 'Predators',
+        lat : 36.160036,
+        long : -86.778542
+    },
+    {
+        name : 'St. Louis',
+        team : 'Blues',
+        lat : 38.62646,
+        long : -90.20207
+    },
+    {
+        name : 'Winnipeg',
+        team : 'Jets',
+        lat : 49.892837,
+        long : -97.14352
     }
 ];
