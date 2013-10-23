@@ -142,6 +142,62 @@ var projects = [
         ]
       },
      "notes":""
+    },
+    {"name": "Google Maps API with AngularJS",
+     "link": "angular-maps.html",
+     "desc":{
+        "title":"Description:",
+        "content":"This is just a small (literally like 40 lines of js code with empty lines) mash up of how AngularJS can be used with Google Maps in quite a powerful way."
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"AngularJS"
+        },
+        {
+          "snippet":"Google Maps API"
+        }]
+      },
+     "files":{
+        "title":"Relevant Files:",
+        "items":[
+          {"title":"angular-maps.html",
+           "snippet":"Declaring angular module, controller and structure in the DOM."
+          },
+          {"title":"script.js",
+           "snippet":"Initialize the angular app module, and controller. Initialize the map, and bind it to the $scope variable. Create markers and bind each marker to the $scope variable as well, as an array."
+          },
+          {"title":"data.json",
+           "snippet":"Holds information on NHL teams with LatLng of arenas, used as sample data for the purposes of this project."
+          }
+        ]
+      },
+     "notes":""
+    },
+    {"name": "Load a Map with Parameters in Link",
+     "link": "loadgmapwithlink.html",
+     "desc":{
+        "title":"Description:",
+        "content":"This demo shows how the <a href='https://github.com/vjeux/URLON' target='_blank'>URLON</a> library can be used in conjuction with Google Maps API to load a map with predetermined parameters - similar to how share links on Google Maps work.<br>To demonstrate:<br><ul><li>Click the following link to open up the app without any parameters (default loads to map centered to Toronto, with a zoom level of 8): <a href='http://svignara.github.io/loadgmapwithlink.html' target='_blank'>normal link</a></li><li>Adding <code>#_lat=41.8819&long=-87.6278&zoom=12</code> to the URL will load the map centered to Chicago and a zoom level of 12: <a href='http://svignara.github.io/loadgmapwithlink.html#_lat=41.8819&long=-87.6278&zoom=12' target='_blank'>Load map centered to Chicago</a></li></ul>"
+      },
+     "tech":{
+        "title":"Technologies used:",
+        "items":[{
+          "snippet":"Google Maps API"
+        }]
+      },
+     "files":{
+        "title":"Relevant Files:",
+        "items":[          
+          {"title":"script.js",
+           "snippet":"Determines if hash values for lat/long and zoom exists in URL, and loads map accordingly."
+          },
+          {"title":"URLON.js",
+           "snippet":"Library that allows parameters to be obtained from hash values in the URL into a pretty JSON format. The library also allows you to construct a hash from a JSON object to append to the url (for purposes like share links). For more info click <a href='https://github.com/vjeux/URLON/' target='_blank'>here</a>."
+          }
+        ]
+      },
+     "notes":""
     }
     
   ];
