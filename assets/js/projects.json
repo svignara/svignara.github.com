@@ -58,7 +58,7 @@ var projects = [
       },
      "notes":""
     },
-    {"name": "Twitter Stream User Timeline",
+    /*{"name": "Twitter Stream User Timeline",
      "link": "twitterstream.html",
      "desc":{
         "title":"Description:",
@@ -79,7 +79,7 @@ var projects = [
         ]
       },
      "notes":""
-    },
+    },*/
     {"name": "Visualization of USA Tornados in 2011",
      "link": "tornados2011.html",
      "desc":{
