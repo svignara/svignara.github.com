@@ -109,7 +109,9 @@ var projects = [
       },
      "notes":""
     },
-    {"name": "Natural Disasters - Canada",
+    /*
+    * trial period of appFog ran out to host node proxy server
+    *{"name": "Natural Disasters - Canada",
      "link": "naturaldisasters.html",
      "desc":{
         "title":"Description:",
@@ -142,7 +144,7 @@ var projects = [
         ]
       },
      "notes":""
-    },
+    },*/
     {"name": "Google Maps API with AngularJS",
      "link": "angular-maps.html",
      "desc":{
