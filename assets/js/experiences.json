@@ -1,18 +1,25 @@
 var experiences = [
     {
-      "role":"Programmer (GIS & Data Services)",
-      "company":"University of Toronto",
-      "tenure":"August 2013 - Present",
+      "role":"Front-end Developer",
+      "company":"Bank of Montreal",
+      "tenure":"March 2014 - Present",
       "contentRef":"#collapse1",
       "contentId":"collapse1",
+      "responsibilities":[]
+    },{
+      "role":"Programmer (GIS & Data Services)",
+      "company":"University of Toronto",
+      "tenure":"August 2013 - February 2014",
+      "contentRef":"#collapse2",
+      "contentId":"collapse2",
       "responsibilities":[]
     },
     {
       "role":"Interactive Developer",
       "company":"SapientNitro",
       "tenure":"February 2012 - August 2013",
-      "contentRef":"#collapse2",
-      "contentId":"collapse2",
+      "contentRef":"#collapse3",
+      "contentId":"collapse3",
       "responsibilities":[
         {
           "desc":"Deploy interactive web pages for clients with the newest in web technologies (HTML5, CSS3, Javascript)"
@@ -32,8 +39,8 @@ var experiences = [
       "role":"Web Developer & SharePoint Architect (Intern)",
       "company":"Mercer",
       "tenure":"August 2010 - Decemeber 2010",
-      "contentRef":"#collapse3",
-      "contentId":"collapse3",
+      "contentRef":"#collapse4",
+      "contentId":"collapse4",
       "responsibilities":[
         {
           "desc":"Used ASP.NET and C# development to enhance company intranet web pages and web applications"
@@ -50,8 +57,8 @@ var experiences = [
       "role":"GIS Teaching Assistant",
       "company":"University of Waterloo",
       "tenure":"May 2010 - August 2010",
-      "contentRef":"#collapse4",
-      "contentId":"collapse4",
+      "contentRef":"#collapse5",
+      "contentId":"collapse5",
       "responsibilities":[
         {
           "desc":"Effectively communicated the principles of geographic information systems (GIS) to students"
@@ -71,8 +78,8 @@ var experiences = [
       "role":"Testing Analyst (Intern)",
       "company":"Ontario Lottery and Gaming Corporation",
       "tenure":"January 2010 - April 2010",
-      "contentRef":"#collapse5",
-      "contentId":"collapse5",
+      "contentRef":"#collapse6",
+      "contentId":"collapse6",
       "responsibilities":[
         {
           "desc":"Planned and performed functional and regression tests for implementations of business systems"
@@ -89,8 +96,8 @@ var experiences = [
       "role":"Database Analyst & Web Applications Developer (Intern)",
       "company":"Ontario Ministry of Health and Long-term Care",
       "tenure":"May 2008 - August 2008",
-      "contentRef":"#collapse6",
-      "contentId":"collapse6",
+      "contentRef":"#collapse7",
+      "contentId":"collapse7",
       "responsibilities":[
         {
           "desc":"Enhanced and managed the Ministry of Health's West Nile Virus Database, to store tables and views of data in MySQL"
@@ -113,8 +120,8 @@ var experiences = [
       "role":"Database Specialist (Intern)",
       "company":"SickKids Hospital",
       "tenure":"September 2007 - December 2007",
-      "contentRef":"#collapse7",
-      "contentId":"collapse7",
+      "contentRef":"#collapse8",
+      "contentId":"collapse8",
       "responsibilities":[
         {
           "desc":"Used DB2 Designer and SQL Enterprise to configure and manage database structure"
@@ -131,8 +138,8 @@ var experiences = [
       "role":"Underground Land Surveyor and AutoCAD Technician (Intern)",
       "company":"Xstrate Zinc (Brunswick Mines)",
       "tenure":"January 2007 - April 2007",
-      "contentRef":"#collapse8",
-      "contentId":"collapse8",
+      "contentRef":"#collapse9",
+      "contentId":"collapse9",
       "responsibilities":[
         {
           "desc":"Surveyed dimensions of mine features using Leica Land Surveying Instruments"
