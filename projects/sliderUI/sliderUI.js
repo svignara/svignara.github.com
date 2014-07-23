@@ -97,12 +97,6 @@
 
                         self.updateFinalPos(leftPos);
 
-                    }).on('vmouseleave.bodySlide', function(evt){
-
-                        $('body').off('.bodySlide');
-
-                        self.updateFinalPos(leftPos);
-
                     });
 
                 },
