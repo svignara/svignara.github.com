@@ -55,6 +55,8 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
+                        console.log('bar down', leftPos);
+
                         sliderMover[0].style.left = leftPos + 'px';
 
                         self.updateValue(leftPos);
@@ -66,6 +68,8 @@
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
+
+                        console.log('bar up', leftPos);
 
                         sliderMover[0].style.left = leftPos + 'px';
 
@@ -87,7 +91,7 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        console.log(leftPos);
+                        console.log('body move', leftPos);
 
                         sliderMover[0].style.left = leftPos + 'px';
 
@@ -96,6 +100,8 @@
                     }).on('vmouseup.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
+
+                        console.log('body up', leftPos);
 
                         self.updateFinalPos(leftPos);
 
