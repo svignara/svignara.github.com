@@ -4,7 +4,7 @@
 
         var opts = $.extend({
             minValue : 0,
-            maxValue : 50000,
+            maxValue : 20,
             increments : 1
         }, options);
 
