@@ -49,7 +49,7 @@
                     var self = this;
                     var leftPos;
 
-                    sliderBar.on('vmousedown', function(evt){
+                    sliderBar.on('mousedown', function(evt){
 
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -61,7 +61,7 @@
 
                         self.bodySlideListener();
 
-                    }).on('vmouseup', function(evt){
+                    }).on('mouseup', function(evt){
 
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -81,7 +81,7 @@
                     var self = this;
                     var leftPos;
 
-                    $('body').on('vmousemove.bodySlide', function(evt){
+                    $('body').on('mousemove.bodySlide', function(evt){
 
                         leftPos = evt.clientX - sliderBarOffset;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -91,13 +91,13 @@
 
                         self.updateValue(leftPos);
 
-                    }).on('vmouseup.bodySlide', function(evt){
+                    }).on('mouseup.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
 
                         self.updateFinalPos(leftPos);
 
-                    }).on('vmouseleave.bodySlide', function(evt){
+                    }).on('mouseleave.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
 

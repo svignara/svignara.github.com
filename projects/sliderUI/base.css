@@ -67,7 +67,7 @@ section:first-child {
 
 /* sliderUI */
 #sliderUI {
-    height: 200px;
+    height: 400px;
     border: 2px dashed #cccccc;
 }
 .slider-input {
@@ -87,7 +87,8 @@ section:first-child {
     position: relative;
     height: 20px;
     background-color: #0079C1;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 40px 50px;
+    cursor: pointer;
 }
 .slider-mover {
     height: 20px;
@@ -96,4 +97,5 @@ section:first-child {
     border-radius: 100%;
     background-color: red;
     top: 0px;
+    cursor: pointer;
 }
