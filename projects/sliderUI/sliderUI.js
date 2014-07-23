@@ -49,7 +49,9 @@
                     var self = this;
                     var leftPos;
 
-                    sliderBar.on('mousedown', function(evt){
+                    sliderBar.on('vmousedown', function(evt){
+
+                        evt.preventDefault();
 
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -61,7 +63,7 @@
 
                         self.bodySlideListener();
 
-                    }).on('mouseup', function(evt){
+                    })/*.on('vmouseup', function(evt){
 
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -72,7 +74,7 @@
                         self.updateValue(leftPos);
                         self.updateFinalPos(leftPos);
 
-                    });
+                    })*/;
 
                 },
 
@@ -81,7 +83,9 @@
                     var self = this;
                     var leftPos;
 
-                    $('body').on('mousemove.bodySlide', function(evt){
+                    $('body').on('vmousemove.bodySlide', function(evt){
+
+                        evt.preventDefault();
 
                         leftPos = evt.clientX - sliderBarOffset;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -91,13 +95,13 @@
 
                         self.updateValue(leftPos);
 
-                    }).on('mouseup.bodySlide', function(evt){
+                    }).on('vmouseup.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
 
                         self.updateFinalPos(leftPos);
 
-                    }).on('mouseleave.bodySlide', function(evt){
+                    }).on('vmouseleave.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
 
