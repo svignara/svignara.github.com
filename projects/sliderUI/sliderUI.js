@@ -55,28 +55,24 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        console.log('bar down', leftPos);
-
-                        sliderMover[0].style.left = leftPos + 'px';
+                        sliderMover.css('left', leftPos + 'px');
 
                         self.updateValue(leftPos);
 
                         self.bodySlideListener();
 
-                    })/*.on('vmouseup', function(evt){
+                    }).on('vmouseup', function(evt){
 
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        console.log('bar up', leftPos);
-
-                        sliderMover[0].style.left = leftPos + 'px';
+                        sliderMover.css('left', leftPos + 'px');
 
                         self.updateValue(leftPos);
                         self.updateFinalPos(leftPos);
 
-                    })*/;
+                    });
 
                 },
 
@@ -91,17 +87,13 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        console.log('body move', leftPos);
-
-                        sliderMover[0].style.left = leftPos + 'px';
+                        sliderMover.css('left', leftPos + 'px');
 
                         self.updateValue(leftPos);
 
                     }).on('vmouseup.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
-
-                        console.log('body up', leftPos);
 
                         self.updateFinalPos(leftPos);
 
@@ -129,7 +121,7 @@
                     var factor = Math.round(leftPos / steps),
                         finalPos = factor * steps;
 
-                    sliderMover[0].style.left = leftPos + 'px';
+                    sliderMover.css('left', finalPos + 'px');
 
                 },
 
@@ -175,7 +167,7 @@
 
                     var sliderPos = val * steps;
 
-                    sliderMover[0].style.left = leftPos + 'px';
+                    sliderMover.css('left', sliderPos + 'px');
 
                 }
 
