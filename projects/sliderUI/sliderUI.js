@@ -63,7 +63,7 @@
 
                         self.bodySlideListener();
 
-                    }).on('vmouseup', function(evt){
+                    })/*.on('vmouseup', function(evt){
 
                         leftPos = (evt.clientX - sliderBarOffset) - 10;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -76,7 +76,7 @@
                         self.updateValue(leftPos);
                         self.updateFinalPos(leftPos);
 
-                    });
+                    })*/;
 
                 },
 
