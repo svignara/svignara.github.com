@@ -85,13 +85,13 @@
                     var self = this;
                     var leftPos;
 
-                    $('#sliderUI').on('vmousemove.bodySlide', function(evt){
+                    $('body').on('vmousemove.bodySlide', function(evt){
 
                         leftPos = evt.clientX - sliderBarOffset;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        console.log('#sliderUI move', leftPos);
+                        console.log('body move', leftPos);
 
                         sliderMover[0].style.left = leftPos + 'px';
 
@@ -101,15 +101,15 @@
 
                     }).on('vmouseup.bodySlide', function(evt){
 
-                        $('#sliderUI').off('.bodySlide');
+                        $('body').off('.bodySlide');
 
-                        console.log('#sliderUI up', leftPos);
+                        console.log('body up', leftPos);
 
                         self.updateFinalPos(leftPos);
 
                     }).on('vmouseleave.bodySlide', function(evt){
 
-                        $('#sliderUI').off('.bodySlide');
+                        $('body').off('.bodySlide');
 
                         self.updateFinalPos(leftPos);
 
