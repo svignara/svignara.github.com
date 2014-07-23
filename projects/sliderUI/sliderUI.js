@@ -83,7 +83,7 @@
 
                     $('body').on('vmousemove.bodySlide', function(evt){
 
-                        leftPos = evt.pageX - sliderBarOffset;
+                        leftPos = evt.clientX - sliderBarOffset;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
