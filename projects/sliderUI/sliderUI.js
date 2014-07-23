@@ -81,7 +81,7 @@
                     var self = this;
                     var leftPos;
 
-                    $('body').on('vmousedown.bodySlide', function(evt){
+                    $('body').on('vmousemove.bodySlide', function(evt){
 
                         leftPos = evt.clientX - sliderBarOffset;
                         leftPos = (leftPos < 0) ? 0 : leftPos;

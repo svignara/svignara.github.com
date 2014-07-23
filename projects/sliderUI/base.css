@@ -85,7 +85,7 @@ section:first-child {
 .slider-bar {
     width: 50%;
     position: relative;
-    height: 30px;
+    height: 2px;
     background-color: #0079C1;
     margin: 20px 0 0 50px;
 }
@@ -94,6 +94,6 @@ section:first-child {
     width: 20px;
     position: absolute;
     border-radius: 100%;
-    background-color: #fff;
+    background-color: #0079C1;
     top: -9px;
 }
