@@ -55,7 +55,7 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        sliderMover.css('left', leftPos + 'px');
+                        sliderMover[0].style.left = leftPos + 'px';
 
                         self.updateValue(leftPos);
 
@@ -67,7 +67,7 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
-                        sliderMover.css('left', leftPos + 'px');
+                        sliderMover[0].style.left = leftPos + 'px';
 
                         self.updateValue(leftPos);
                         self.updateFinalPos(leftPos);
@@ -89,7 +89,7 @@
 
                         console.log(leftPos);
 
-                        sliderMover.css('left', leftPos + 'px');
+                        sliderMover[0].style.left = leftPos + 'px';
 
                         self.updateValue(leftPos);
 
@@ -123,7 +123,7 @@
                     var factor = Math.round(leftPos / steps),
                         finalPos = factor * steps;
 
-                    sliderMover.css('left', finalPos + 'px');
+                    sliderMover[0].style.left = leftPos + 'px';
 
                 },
 
@@ -169,7 +169,7 @@
 
                     var sliderPos = val * steps;
 
-                    sliderMover.css('left', sliderPos + 'px');
+                    sliderMover[0].style.left = leftPos + 'px';
 
                 }
 
