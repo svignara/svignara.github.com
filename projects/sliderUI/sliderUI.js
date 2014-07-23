@@ -1,10 +1,10 @@
-(function($){
+(function($, Modernizr){
 
     $.fn.sliderUI = function( options ){
 
         var opts = $.extend({
             minValue : 0,
-            maxValue : 20,
+            maxValue : 50000,
             increments : 1
         }, options);
 
@@ -16,7 +16,7 @@
                 inputVal = sliderInput.val(),
                 sliderBar = sliderInput.next(),
                 sliderMover = sliderBar.children(':first-child'),
-                sliderBarWidth = sliderBar.width() - sliderMover.width() - 14,
+                sliderBarWidth = (Modernizr.touch) ? sliderBar.width() - sliderMover.width() : sliderBar.width() - sliderMover.width() - 14,
                 sliderBarOffset = sliderBar[0].offsetLeft,
                 inc = ( opts.maxValue - opts.minValue ) / opts.increments,
                 steps = sliderBarWidth / inc;
@@ -185,4 +185,4 @@
 
     $('.slider-input').sliderUI();
 
-}(window.jQuery));
+}(window.jQuery, window.Modernizr));
