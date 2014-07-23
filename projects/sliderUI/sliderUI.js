@@ -95,6 +95,8 @@
 
                         sliderMover[0].style.left = leftPos + 'px';
 
+                        console.log(sliderMover[0]);
+
                         self.updateValue(leftPos);
 
                     }).on('vmouseup.bodySlide', function(evt){
