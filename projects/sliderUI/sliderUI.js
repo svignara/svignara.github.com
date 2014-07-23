@@ -57,9 +57,9 @@
 
                         console.log('bar down', leftPos);
 
-                        sliderMover.css('margin-left', leftPos + 'px');
+                        sliderMover[0].style.left = leftPos + 'px';
 
-                        //self.updateValue(leftPos);
+                        self.updateValue(leftPos);
 
                         self.bodySlideListener();
 
@@ -71,7 +71,7 @@
 
                         console.log('bar up', leftPos);
 
-                        sliderMover.css('margin-left', leftPos + 'px');
+                        sliderMover[0].style.left = leftPos + 'px';
 
                         self.updateValue(leftPos);
                         self.updateFinalPos(leftPos);
@@ -93,11 +93,9 @@
 
                         console.log('body move', leftPos);
 
-                        sliderMover.css('margin-left', leftPos + 'px');
+                        sliderMover[0].style.left = leftPos + 'px';
 
-                        //console.log(sliderMover[0]);
-
-                        //self.updateValue(leftPos);
+                        self.updateValue(leftPos);
 
                     }).on('vmouseup.bodySlide', function(evt){
 
@@ -131,7 +129,7 @@
                     var factor = Math.round(leftPos / steps),
                         finalPos = factor * steps;
 
-                    sliderMover.css('margin-left', leftPos + 'px');
+                    sliderMover[0].style.left = leftPos + 'px';
 
                 },
 
@@ -177,7 +175,7 @@
 
                     var sliderPos = val * steps;
 
-                    sliderMover.css('margin-left', leftPos + 'px');
+                    sliderMover[0].style.left = leftPos + 'px';
 
                 }
 
