@@ -81,7 +81,7 @@
                     var self = this;
                     var leftPos;
 
-                    $('body').on('swipe.bodySlide', function(evt){
+                    $('body').on('vmousemove.bodySlide', function(evt){
 
                         leftPos = evt.clientX - sliderBarOffset;
                         leftPos = (leftPos < 0) ? 0 : leftPos;
@@ -92,6 +92,12 @@
                         self.updateValue(leftPos);
 
                     }).on('vmouseup.bodySlide', function(evt){
+
+                        $('body').off('.bodySlide');
+
+                        self.updateFinalPos(leftPos);
+
+                    }).on('vmouseleave.bodySlide', function(evt){
 
                         $('body').off('.bodySlide');
 
