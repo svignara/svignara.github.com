@@ -83,16 +83,16 @@ section:first-child {
     outline: 0;
 }
 .slider-bar {
-    width: 50%;
+    width: 80%;
     position: relative;
-    height: 20px;
+    height: 40px;
     background-color: #0079C1;
-    margin: 20px 0 40px 50px;
+    margin: 20px 0 40px 20px;
     cursor: pointer;
 }
 .slider-mover {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     position: absolute;
     border-radius: 100%;
     background-color: red;

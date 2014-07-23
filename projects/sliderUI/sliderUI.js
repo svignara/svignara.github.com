@@ -4,7 +4,7 @@
 
         var opts = $.extend({
             minValue : 0,
-            maxValue : 100000,
+            maxValue : 50000,
             increments : 1
         }, options);
 
@@ -16,7 +16,7 @@
                 inputVal = sliderInput.val(),
                 sliderBar = sliderInput.next(),
                 sliderMover = sliderBar.children(':first-child'),
-                sliderBarWidth = sliderBar.width() - 20,
+                sliderBarWidth = sliderBar.width() - sliderMover.width() - 14,
                 sliderBarOffset = sliderBar[0].offsetLeft,
                 inc = ( opts.maxValue - opts.minValue ) / opts.increments,
                 steps = sliderBarWidth / inc;
