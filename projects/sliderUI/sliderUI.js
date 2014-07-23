@@ -57,7 +57,7 @@
 
                         console.log('bar down', leftPos);
 
-                        sliderMover[0].style.left = leftPos + 'px';
+                        sliderMover.css('margin-left', leftPos + 'px');
 
                         //self.updateValue(leftPos);
 
@@ -71,7 +71,7 @@
 
                         console.log('bar up', leftPos);
 
-                        sliderMover[0].style.left = leftPos + 'px';
+                        sliderMover.css('margin-left', leftPos + 'px');
 
                         self.updateValue(leftPos);
                         self.updateFinalPos(leftPos);
@@ -93,7 +93,7 @@
 
                         console.log('body move', leftPos);
 
-                        sliderMover[0].style.left = leftPos + 'px';
+                        sliderMover.css('margin-left', leftPos + 'px');
 
                         //console.log(sliderMover[0]);
 
@@ -131,7 +131,7 @@
                     var factor = Math.round(leftPos / steps),
                         finalPos = factor * steps;
 
-                    sliderMover[0].style.left = leftPos + 'px';
+                    sliderMover.css('margin-left', leftPos + 'px');
 
                 },
 
@@ -177,7 +177,7 @@
 
                     var sliderPos = val * steps;
 
-                    sliderMover[0].style.left = leftPos + 'px';
+                    sliderMover.css('margin-left', leftPos + 'px');
 
                 }
 
