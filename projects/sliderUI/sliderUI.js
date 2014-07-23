@@ -87,6 +87,8 @@
                         leftPos = (leftPos < 0) ? 0 : leftPos;
                         leftPos = (leftPos > sliderBarWidth) ? sliderBarWidth : leftPos;
 
+                        console.log(leftPos);
+
                         sliderMover.css('left', leftPos + 'px');
 
                         self.updateValue(leftPos);
