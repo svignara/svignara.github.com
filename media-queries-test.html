@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Media Queries Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      div {
+        border: 1px dashed red;
+        margin: 10px 0;
+        display: none;
+      }
+      @media only screen and (min-width: 768px){
+        .gte-768-viewport {
+          display: block;
+          background-color: #EBEBEB;
+        }
+      }
+      @media only screen and (min-device-width: 768px){
+        .gte-768-device {
+          display: block;
+          background-color: #D7D7D7;
+        }
+      }
+      @media only screen and (max-width: 767px){
+        .lt-768-viewport {
+          display: block;
+          background-color: #B7B7B7;
+        }
+      }
+      @media only screen and (max-device-width: 767px){
+        .lt-768-device {
+          display: block;
+          background-color: #959595;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Media Queries Test</h1>
+
+    <div class="gte-768-viewport">
+      <h2>You're browser window's width is greater than or equal to 768px</h2>
+    </div>
+    <div class="gte-768-device">
+      <h2>You're device screen's width is greater than or equal to 768px</h2>
+    </div>
+
+    <div class="lt-768-viewport">
+      <h2>You're browser window's width is less than 768px</h2>
+    </div>
+    <div class="lt-768-device">
+      <h2>You're device screen's width is less than 768px</h2>
+    </div>
+
+  </body>
+</html>
