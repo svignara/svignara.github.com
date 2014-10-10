@@ -6,6 +6,14 @@
         <meta name="description" content="">        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
+        <style>
+            label {
+                display: block;
+            }
+            input[type="text"]{
+                display: block;
+            }
+        </style>
     </head>
     <body>
 
@@ -13,7 +21,7 @@
 
         <form>
             <input type="text" name="name" placeholder="Enter name" required>
-            <label for="order">Place your order:</label>
+            <label for="order">Place your order:
             <input list="order" name="order" required>
             <datalist id="order">
                 <option value="Big Mac">
@@ -25,10 +33,13 @@
                 <option value="Soda">
                 <option value="Salad">    
             </datalist>
-            <label for="quantity">Quantity:</label>
+            </label>
+            <label for="quantity">Quantity:
             <input type="number" name="quantity" min="1" max="5" value="1" id="quantity">
-            <label for="date">Delivery date:</label>
+            </label>
+            <label for="date">Delivery date:
             <input type="date" name="date" id="date" required>
+            </label>
             <label><input type="radio" name="payment" value="credit" required> Credit</label>
             <label><input type="radio" name="payment" value="debit"> Debit</label>
             <label><input type="radio" name="payment" value="cash"> Cash</label>
