@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon" />
+        <!-- Apple Touch Icons -->
+        <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-152x152.png" />
+        <!-- Windows 8 Tile Icons -->
+        <meta name="msapplication-square70x70logo" content="img/icons/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="img/icons/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="img/icons/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="img/icons/largetile.png" />
+
+        <style>
+            .column-layout {
+                column-count: 3;
+                column-width: 75px;
+                column-gap: 20px;
+                column-rule: 1px solid #fff;
+            }
+            #canvas-bg {
+                background: -webkit-canvas(background);
+            }
+        </style>
+
+        <script src="prefixfree.min.js"></script>
+        <script src="modernizr.js"></script>
+    </head>
+    <body>
+
+        <h1>Assignment 2</h1>
+
+        <h2>Question 1</h2>
+        <p class="column-layout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <h2>Question 2</h2>
+        <script>
+            if (!Modernizr.geolocation){
+                document.write('<p>Sorry your browser does not support HTML5 Geolocation API</p>');
+            } else {
+                document.write('<p>HTML5 Geolocation API supported!</p>');
+            }
+            if (!Modernizr.audio){
+                document.write('<p>Sorry your browser does not support HTML5 Audio playback</p>');
+            } else {
+                document.write('<p>HTML5 Audio playback supported!</p>');
+            }
+            if (!Modernizr.csscolumns){
+                document.write('<p>Sorry your browser does not support CSS3 Columns</p>');
+            } else {
+                document.write('<p>CSS3 Columns supported!</p>');
+            }
+        </script>
+
+        <h2>Question 3</h2>
+        <div id="canvas-bg">
+            <p class="column-layout">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        </div>
+
+        <h4>Question 4</h4>
+        <p>Emoji: &#xe2708;</p>
+
+        <script>
+            /* webkit-canvas */
+            var context = document.getCSSCanvasContext("2d", "background", 100, 100);
+
+            context.fillStyle = 'rgb(0,121,193)';
+            context.beginPath();
+            context.arc(0,0,45,0,2*Math.PI);
+            context.fill();
+        </script>
+    </body>
+</html>
