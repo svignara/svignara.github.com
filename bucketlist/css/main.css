@@ -42,3 +42,8 @@ form[name="login"].has-error .error-msg {
   width: 90%;
   margin: 0 auto;
 }
+@media (min-width: 768px){
+  #map-canvas {
+    height: 640px;
+  }
+}
