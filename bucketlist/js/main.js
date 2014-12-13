@@ -1,6 +1,7 @@
 (function($){
 
-    var map;
+    var map,
+        isMobile = window.matchMedia('(max-width:767px)').matches;;
 
     var bucketlist = {
         init : function(){
@@ -19,7 +20,6 @@
             });
         },
         responsiveImg : function(){
-            var isMobile = window.matchMedia('(max-width:767px)').matches;
             $('.img-responsive').each(function(i){
                 this.src = isMobile ? $(this).data('mobile') : $(this).data('desktop');
             });
@@ -37,7 +37,7 @@
                 e.preventDefault();
                 var btnContainer = $(this).parent();
                 btnContainer.toggleClass('on');
-                if (bmo.core.isViewportMobile()){
+                if (isMobile){
                     btnContainer.parent().children('.mobile-read-more').toggleClass('on');
                 }else{
                     btnContainer.parent().children('.desktop-read-more').toggleClass('on');
