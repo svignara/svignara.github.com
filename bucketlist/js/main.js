@@ -12,6 +12,7 @@
                 self.responsiveImg();
                 self.initSignupUI();
                 self.initLoginUI();
+                self.readMoreUI();
                 if (location.href.indexOf('bucketlist.html') > -1){
                     self.getLocation();
                 }
@@ -31,7 +32,19 @@
             var self = this;
             self.loginFormSubmitListener();
         },
-        getLocation : function (){
+        readMoreUI : function(){
+            $('.read-more-toggle > a').on('click', function(e){
+                e.preventDefault();
+                var btnContainer = $(this).parent();
+                btnContainer.toggleClass('on');
+                if (bmo.core.isViewportMobile()){
+                    btnContainer.parent().children('.mobile-read-more').toggleClass('on');
+                }else{
+                    btnContainer.parent().children('.desktop-read-more').toggleClass('on');
+                }
+            });
+        },
+        getLocation : function(){
             var self = this;
 
             if (navigator.geolocation){

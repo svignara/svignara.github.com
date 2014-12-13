@@ -47,3 +47,38 @@ form[name="login"].has-error .error-msg {
     height: 400px;
   }
 }
+.read-more-toggle .show-btn,
+.read-more-toggle.on .hide-btn {
+  display: block;
+  margin: 15px auto 0;
+}
+.read-more-toggle .hide-btn,
+.read-more-toggle.on .show-btn {
+  display: none;
+}
+@media (max-width: 767px){
+  .mobile-read-more,
+  .mobile-read-more ~ * {
+    display: none;
+  }
+  .mobile-read-more.on,
+  .mobile-read-more.on ~ * {
+    display: block;
+  }
+  .mobile-read-more ~ .read-more-toggle {
+    display: block;
+  }
+}
+@media (min-width: 768px){
+  .desktop-read-more,
+  .desktop-read-more ~ * {
+    display: none;
+  }
+  .desktop-read-more.on,
+  .desktop-read-more.on ~ * {
+    display: block;
+  }
+  .desktop-read-more ~ .read-more-toggle {
+    display: block;
+  }
+}
