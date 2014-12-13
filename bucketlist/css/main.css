@@ -47,6 +47,15 @@ form[name="login"].has-error .error-msg {
     height: 400px;
   }
 }
+#current-bucketlist {
+  text-align: center;
+}
+#current-bucketlist dt {
+  margin-top: 10px;
+}
+#current-bucketlist dt:first-child {
+  margin-top: 0px;
+}
 .read-more-toggle .show-btn,
 .read-more-toggle.on .hide-btn {
   display: block;
