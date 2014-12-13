@@ -37,3 +37,8 @@ form[name="login"] .error-msg {
 form[name="login"].has-error .error-msg {
   display: block;
 }
+#map-canvas {
+  height: 320px;
+  width: 90%;
+  margin: 0 auto;
+}

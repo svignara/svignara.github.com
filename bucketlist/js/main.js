@@ -1,5 +1,7 @@
 (function($){
 
+    var map;
+
     var bucketlist = {
         init : function(){
             this.initUI();
@@ -10,6 +12,9 @@
                 self.responsiveImg();
                 self.initSignupUI();
                 self.initLoginUI();
+                if (location.href.indexOf('bucketlist.html') > -1){
+                    self.loadMap();
+                }
             });
         },
         responsiveImg : function(){
@@ -25,6 +30,14 @@
         initLoginUI : function(){
             var self = this;
             self.loginFormSubmitListener();
+        },
+        loadMap : function(){
+            var mapOptions = {
+                zoom: 8,
+                center: new google.maps.LatLng(43.7, -79.4),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
         },
         signupFormSubmitListener : function(){
             $('form[name="signup"]').on('submit', function(evt){
