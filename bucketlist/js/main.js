@@ -64,7 +64,7 @@
                     position: e.latLng,
                     map: map
                 });
-                map.panTo(position);
+                map.panTo(e.latLng);
             });
 
         },
