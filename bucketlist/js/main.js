@@ -13,7 +13,12 @@
         signupFormSubmitListener : function(){
             $('form[name="signup"]').on('submit', function(evt){
                 evt.preventDefault();
-                console.log('submit data');
+                var user = {
+                    email : $('#inputEmail').val();
+                    pass : $('#inputPassword').val();
+                }
+                window.localStorage.setItem('user', JSON.stringify(user));
+                $('body').addClass('signedup');
             });
         }
     }
