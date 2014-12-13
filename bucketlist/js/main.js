@@ -56,7 +56,17 @@
             self.mapUI();
         },
         mapUI : function(){
-            console.log('ready');
+
+            var self = this;
+
+            google.maps.event.addListener(map, 'click', function(e) {
+                var marker = new google.maps.Marker({
+                    position: e.latLng,
+                    map: map
+                });
+                map.panTo(position);
+            });
+
         },
         signupFormSubmitListener : function(){
             $('form[name="signup"]').on('submit', function(evt){
