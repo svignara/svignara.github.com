@@ -1,3 +1,11 @@
+.localstorage .yes-localStorage,
+.no-localStorage {
+  display: block;
+}
+.localstorage .no-localStorage,
+.yes-localStorage {
+  display: none;
+}
 .container.signup,
 .signedup .container.signedup {
   display: block;
