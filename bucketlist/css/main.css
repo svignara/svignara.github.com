@@ -31,3 +31,9 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+form[name="login"] .error-msg {
+  display: none;
+}
+form[name="login"].has-error .error-msg {
+  display: block;
+}
