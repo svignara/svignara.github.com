@@ -14,8 +14,8 @@
             $('form[name="signup"]').on('submit', function(evt){
                 evt.preventDefault();
                 var user = {
-                    email : $('#inputEmail').val();
-                    pass : $('#inputPassword').val();
+                    email : $('#inputEmail').val(),
+                    pass : $('#inputPassword').val()
                 }
                 window.localStorage.setItem('user', JSON.stringify(user));
                 $('body').addClass('signedup');
