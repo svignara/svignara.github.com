@@ -38,12 +38,12 @@ form[name="login"].has-error .error-msg {
   display: block;
 }
 #map-canvas {
-  height: 320px;
+  height: 260px;
   width: 90%;
   margin: 0 auto;
 }
 @media (min-width: 768px){
   #map-canvas {
-    height: 640px;
+    height: 400px;
   }
 }
