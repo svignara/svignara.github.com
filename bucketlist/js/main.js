@@ -7,8 +7,15 @@
         initUI : function(){
             var self = this;
             $(function(){
+                self.responsiveImg();
                 self.initSignupUI();
                 self.initLoginUI();
+            });
+        },
+        responsiveImg : function(){
+            var isMobile = window.matchMedia('(max-width:767px)').matches;
+            $('.img-responsive').each(function(i){
+                this.src = isMobile ? $(this).data('mobile') : $(this).data('desktop');
             });
         },
         initSignupUI : function(){
