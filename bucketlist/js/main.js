@@ -13,7 +13,7 @@
                 self.initSignupUI();
                 self.initLoginUI();
                 if (location.href.indexOf('bucketlist.html') > -1){
-                    self.loadMap();
+                    self.getLocation();
                 }
             });
         },
@@ -31,10 +31,22 @@
             var self = this;
             self.loginFormSubmitListener();
         },
-        loadMap : function(){
+        getLocation : function (){
+            var self = this;
+
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(self.loadMap, self.loadMap);
+            }else{
+                console.log('browser does not support geolocation API and geolocation polyfill did not work..');
+                self.loadMap();
+            }
+        },
+        loadMap : function(loc){
+            var center = (loc) ? new google.maps.LatLng(loc.coords.latitude,loc.coords.longitude) : new google.maps.LatLng(43.7, -79.4);
+
             var mapOptions = {
                 zoom: 8,
-                center: new google.maps.LatLng(43.7, -79.4),
+                center: center,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
