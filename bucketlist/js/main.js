@@ -42,7 +42,7 @@
             }
         },
         loadMap : function(loc){
-            var self = this;
+            var self = bucketlist;
 
             var center = (loc) ? new google.maps.LatLng(loc.coords.latitude,loc.coords.longitude) : new google.maps.LatLng(43.7, -79.4);
 
