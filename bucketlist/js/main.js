@@ -35,7 +35,7 @@
             $('form[name="login"]').on('submit', function(evt){
                 evt.preventDefault();
                 if (!self.validUser($('#inputEmail').val(), $('#inputPassword').val())){
-                    $(this).hasClass('has-error');
+                    $(this).addClass('has-error');
                     return false;
                 }else{
                     window.location.href = "bucketlist.html";
