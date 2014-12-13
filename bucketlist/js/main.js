@@ -42,6 +42,8 @@
             }
         },
         loadMap : function(loc){
+            var self = this;
+
             var center = (loc) ? new google.maps.LatLng(loc.coords.latitude,loc.coords.longitude) : new google.maps.LatLng(43.7, -79.4);
 
             var mapOptions = {
@@ -50,6 +52,11 @@
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            self.mapUI();
+        },
+        mapUI : function(){
+            console.log('ready');
         },
         signupFormSubmitListener : function(){
             $('form[name="signup"]').on('submit', function(evt){
