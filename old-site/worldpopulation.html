@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>World Population | Suvi's Projects</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="projects/worldpopulation/worldpopulation-style.css">    
+  </head>
+  <body>
+    <div id="locations">
+      <ul>
+        <li class="continent"><a id="002" href="#">Africa</a>
+          <ul class="areas">
+            <li><a id="015" href="#">Northern Africa</a></li>
+            <li><a id="011" href="#">Western Africa</a></li>
+            <li><a id="017" href="#">Middle Africa</a></li>
+            <li><a id="014" href="#">Eastern Africa</a></li>
+            <li><a id="018" href="#">Southern Africa</a></li>
+          </ul>
+        </li>
+        <li class="continent"><a id="150" href="#">Europe</a>
+          <ul class="areas">
+            <li><a id="154" href="#">Northern Europe</a></li>
+            <li><a id="155" href="#">Western Europe</a></li>          
+            <li><a id="151" href="#">Eastern Europe</a></li>
+            <li><a id="039" href="#">Southern Europe</a></li>
+          </ul>
+        </li>
+        <li class="continent"><a id="021" href="#">North America</a></li>
+        <li class="continent"><a id="005" href="#">South America</a></li>
+        <li class="continent"><a id="013" href="#">Central America</a></li>
+        <li class="continent"><a id="029" href="#">Caribbeans</a></li>
+        <li class="continent"><a id="142" href="#">Asia</a>
+          <ul class="areas">
+            <li><a id="143" href="#">Central Asia</a></li>
+            <li><a id="030" href="#">Eastern Asia</a></li>
+            <li><a id="034" href="#">Southern Asia</a></li>
+            <li><a id="035" href="#">South-Eastern Asia</a></li>
+            <li><a id="145" href="#">Western Asia</a></li>
+          </ul>
+        </li>
+        <li class="continent"><a id="009" href="#">Oceania</a>
+          <ul class="areas">
+            <li><a id="053" href="#">Australasia</a></li>
+            <li><a id="054" href="#">Melanesia</a></li>
+            <li><a id="057" href="#">Micronesia</a></li>
+            <li><a id="061" href="#">Polynesia</a></li>
+          </ul>
+        </li>
+        <li class="continent selected"><a id="world" href="#">World</a></li>
+      </ul>
+    </div>
+    <div id="chart_div" ></div>
+    <div id="credits">
+      <p>Population Data Obtained from Wikipedia's <a href="http://en.wikipedia.org/wiki/List_of_countries_by_population" target="_blank">List of Countries By Population</a> (as of Dec 30 2012)</p>
+      <p>Purpose: Test out <a href="https://developers.google.com/chart/interactive/docs/gallery/geochart">Google's Data Visualization: GeoChart tool</a></p>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript' src='projects/worldpopulation/worldpopulation-main.js'></script>
+    <script type='text/javascript' src='projects/worldpopulation/worldpopulation-ui.js'></script>
+  </body>
+</html>

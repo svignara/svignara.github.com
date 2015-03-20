@@ -1,0 +1,81 @@
+body {
+  padding-top:40px;
+  background-color:#ECECEC;
+}
+#aboutme{
+  padding-top:40px;
+}
+.form-horizontal .control-label {
+  width: 170px;
+  margin-right: 10px;
+}
+#searchInput {
+  width:200px;
+}
+#aboutme-container {
+  min-height: 200px;
+}
+#aboutme-container table{
+  background-color: white;
+}
+#aboutme-tabs blockquote {
+  border:none;
+  margin-bottom:0px;
+  padding:0;
+}
+#aboutme-tabs blockquote p{
+  font-weight:inherit;
+  font-style:inherit;
+  font-size:inherit;
+  line-height: inherit;
+}
+.control {
+  height:22px;
+  margin-bottom:20px;
+  position:relative;
+}
+.control.bottom {
+  margin-bottom:0px;
+  margin-top:20px;
+}
+.control .btn{
+  position:absolute;
+  right:0;
+  display:none;
+}
+.control .btn.on {
+  display:block;
+}
+.experiences, .connections {
+  background-color:white;
+}
+.experience-heading .lead {
+  margin-bottom:0;
+}
+.experience.well-small {
+  background-color:white;
+}
+.experience-heading a {
+  color:#333;
+}
+.experience-heading a:hover {
+  text-decoration: none;
+}
+.connections li {
+  margin:5px 0;
+}
+.connections li img {
+  margin-right:5px;
+}
+@media screen and (max-width:767px){
+  #profile-pic-holder {
+    text-align: center;
+    padding:20px;
+  }
+  #profile-pic {
+    max-width:100px;
+  }
+  #aboutme-tabs {
+    padding:20px;
+  }
+}

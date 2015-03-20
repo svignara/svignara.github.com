@@ -1,3 +1,2 @@
-.DS_Store
-server.js
-node_modules
+_site
+.sass-cache

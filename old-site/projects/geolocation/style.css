@@ -1,0 +1,6 @@
+#map {height: 600px; width:720px; display:inline-block;}
+#errorMessages {margin-left:50px; vertical-align:top;}
+#errorMessages .heading {margin-bottom:10px; font-size:18px; font-weight:bold;border-bottom: 1px solid black;}
+#errorMessages li {border-bottom: 1px solid black;margin-bottom:10px;padding-bottom:10px;}
+.hidden {display:none;}
+.show {display:inline-block;}​

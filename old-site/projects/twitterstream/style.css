@@ -1,0 +1,30 @@
+.form-inline label, .form-inline .btn {
+  margin:0 10px;
+}
+.form-inline input{
+  margin:0 10px 0 0;
+}
+#name {
+  width:150px;
+}
+#tweets-container {
+  display:none;
+}
+#tweets-container.on {
+  display:block;
+}
+
+@media screen and (max-width: 599px){
+  
+  .form-inline input, .form-inline .btn {
+    display:block;
+    margin:10px;
+  }
+  .form-inline label{
+    display:none;
+  }
+  .form-inline #name {
+    width:90%;
+  }
+
+}
