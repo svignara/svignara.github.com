@@ -12,14 +12,14 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-    
+
     <script src="assets/js/projects.json"></script>
     <script src="assets/js/tabs.json"></script>
     <script src="assets/js/bio.json"></script>
-    <script src="assets/js/skills.json"></script>    
+    <script src="assets/js/skills.json"></script>
     <script src="assets/js/experiences.json"></script>
-    <script src="assets/js/networks.json"></script>   
-    
+    <script src="assets/js/networks.json"></script>
+
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.min.js"></script>
     <script src="assets/js/controllers.js"></script>
@@ -46,7 +46,8 @@
             <!-- .nav, .navbar-search, .navbar-form, etc -->
             <ul class="nav">
                 <li class="active"><a href="#projects">Projects</a></li>
-                <li><a href="#aboutme">About Me</a></li>                
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="/">Suvi's New House</a></li>
             </ul>
           </div>
 
@@ -56,7 +57,7 @@
 
     <!-- body container  -->
     <div class="container">
-        
+
         <div id="projects" class="row-fluid" ng-controller="ProjectEntriesCtrl">
             <h1>Projects</h1>
             <p>Below are a list of projects that I just mash together to try out some of the cool new APIs out there.</p>
@@ -82,7 +83,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="aboutme" class="row-fluid">
             <h1>About Me</h1>
 
@@ -98,16 +99,16 @@
                       </ul>
 
                       <div class="tab-content">
-                        
+
                         <div class="tab-pane active" id="tab1">
                             <table class="table table-bordered table-hover" ng-controller="BioCtrl">
                                 <tr ng-repeat="info in bio">
                                     <td>{{info.type}}</td>
                                     <td ng-bind-html="info.value"></td>
-                                </tr>                                
+                                </tr>
                             </table>
                         </div>
-                        
+
                         <div class="tab-pane" id="tab2">
                             <table class="table table-bordered table-hover" ng-controller="SkillsCtrl">
                                 <tr ng-repeat="skill in skills">
@@ -117,16 +118,16 @@
                                             <li ng-repeat="specificSkill in skill.specificSkills" ng-bind-html="specificSkill.name"></li>
                                         </ul>
                                     </td>
-                                </tr>                                
+                                </tr>
                             </table>
                         </div>
-                        
-                        <div class="tab-pane" id="tab3" ng-controller="ExperiencesCtrl">                           
+
+                        <div class="tab-pane" id="tab3" ng-controller="ExperiencesCtrl">
                             <div class="control">
                                 <button class="btn btn-mini btn-primary on" type="button">Expand All</button>
                                 <button class="btn btn-mini btn-danger" type="button">Collapse All</button>
                             </div>
-                            
+
                             <div class="experience well well-small" ng-repeat="exp in experiences">
                               <div class="experience-heading">
                                 <a data-toggle="collapse" data-parent="" href="{{exp.contentRef}}">
@@ -138,7 +139,7 @@
                               <div id="{{exp.contentId}}" class="collapse">
                                 <div class="accordion-inner experience-body">
                                     <ul>
-                                        <li ng-repeat="responsibility in exp.responsibilities">{{responsibility.desc}}</li>                                        
+                                        <li ng-repeat="responsibility in exp.responsibilities">{{responsibility.desc}}</li>
                                     </ul>
                                 </div>
                               </div>
@@ -149,7 +150,7 @@
                                 <button class="btn btn-mini btn-danger" type="button">Collapse All</button>
                             </div>
                         </div>
-                        
+
                         <div class="tab-pane" id="tab4" ng-controller="NetworksCtrl">
                             <div class="well connections">
                             <ul class="unstyled">
@@ -161,14 +162,14 @@
                             </a>
                             </div>
                         </div>
-                        
+
                       </div>
                     </div>
                 </div>
               </div>
             </div>
         </div>
-        
+
     </div>
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
