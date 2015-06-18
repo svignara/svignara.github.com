@@ -12,11 +12,15 @@ permalink: /my-resume/
 
 
 ---
+
 ##Technical Skills
+
 **Like:** html, css, javascript, google-maps-api-3, responsive-design
 
 ---
+
 ##Experience
+
 **Senior Front-end Developer**, Bank of Montreal, *March 2014 - Current*
 
 html, css, javascript, angularjs
