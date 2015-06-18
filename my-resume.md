@@ -1,3 +1,8 @@
+---
+layout: page
+title: Suvi Vignarajah Resume
+permalink: /my-resume/
+---
 
 #Suvi Vignarajah
 - Toronto, ON, Canada
