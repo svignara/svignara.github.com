@@ -15,7 +15,7 @@ permalink: /my-resume/
 
 ##Technical Skills
 
-**Like:** html, css, javascript, google-maps-api-3, responsive-design
+**Like:** html, css, javascript, google-maps-api-3, responsive-design, angularjs, nodejs
 
 ---
 
