@@ -4,10 +4,10 @@ title: Suvi Vignarajah Resume
 permalink: /my-resume/
 ---
 
-- Toronto, ON, Canada
-- 1-647-280-8780
-- suvethan@gmail.com
-- http://svignara.github.io/
+Toronto, ON, Canada
+1-647-280-8780
+suvethan@gmail.com
+http://svignara.github.io/
 
 
 
