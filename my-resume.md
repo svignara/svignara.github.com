@@ -4,7 +4,6 @@ title: Suvi Vignarajah Resume
 permalink: /my-resume/
 ---
 
-#Suvi Vignarajah
 - Toronto, ON, Canada
 - 1-647-280-8780
 - suvethan@gmail.com
@@ -13,12 +12,11 @@ permalink: /my-resume/
 
 
 ---
-## Technical Skills
+##Technical Skills
 **Like:** html, css, javascript, google-maps-api-3, responsive-design
 
 ---
 ##Experience
-
 **Senior Front-end Developer**, Bank of Montreal, *March 2014 - Current*
 
 html, css, javascript, angularjs
