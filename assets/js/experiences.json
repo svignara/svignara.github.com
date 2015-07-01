@@ -1,18 +1,47 @@
 var experiences = [
     {
-      "role":"Front-end Developer",
+      "role":"Senior Front-end Developer",
       "company":"Bank of Montreal",
       "tenure":"March 2014 - Present",
       "contentRef":"#collapse1",
       "contentId":"collapse1",
-      "responsibilities":[]
+      "responsibilities":[
+        {
+          "desc" : "Worked out solutions for building a front-end foundation and codebase when migrating CMS platforms"
+        },
+        {
+          "desc" : "Played an integral role in the development efforts of the re-branding and redesign of the new <a href='https://www.bmo.com' target='_blank'>BMO.com</a> website"
+        },
+        {
+          "desc" : "Lead developer for the redesign and migration of the <a href='https://www.bmo.com/insurance' target='_blank'>BMO Insurance</a> and <a href='https://www.bmo.com/self-directed' target='_blank'>BMO Investorline</a> sites"
+        },
+        {
+          "desc" : "Held presentations to the Front-end team on front-end technologies (such as: LESS, Jasmine, Responsive Web Design, Chrome DevTools, nodeJS)"
+        },
+        {
+          "desc" : "<b>Other notable projects:</b><ul><li><a href='http://www.bmo.com/main/personal/mortgages#Mortgage-affordability-calculator' target='_blank'>Mortgage Affordability Calculator</a></li><li><a href='http://www.bmo.com/main/search#q=bmo&page=1' target='_blank'>BMO.com Search functionality</a></li><li><a href='https://www.bmo.com/insurance/life-insurance/headstart-in-life' target='_blank'>Quote Widget for Insurance products</a></li><li><a href='http://www.bmo.com/main/personal/credit-cards' target='_blank'>Refactoring Credit card Apply Now logic</a></li><li><a href='http://www.bmo.com/main/personal/credit-cards/compare-tool' target='_blank'>Credit cards compare tool</a></li></ul>"
+        }
+      ]
     },{
       "role":"Programmer (GIS & Data Services)",
       "company":"University of Toronto",
       "tenure":"August 2013 - February 2014",
       "contentRef":"#collapse2",
       "contentId":"collapse2",
-      "responsibilities":[]
+      "responsibilities":[
+        {
+          "desc" : "Maintain and enhance features of the <a href='http://geo.scholarsportal.info/' target='_blank'>Scholars Geoportal</a>"
+        },
+        {
+          "desc" : "Use ArcGIS Javascript API, dojo and javascript to enhance features on the front-end"
+        },
+        {
+          "desc" : "Investigate best approaches to make user accessible web mapping applications"
+        },
+        {
+          "desc" : "Take part in weekly meetings to discuss product state and future plans"
+        }
+      ]
     },
     {
       "role":"Interactive Developer",
@@ -31,7 +60,13 @@ var experiences = [
           "desc":"Follow best front-end practices for high performance and efficient load time for web sites"
         },
         {
-          "desc":"Take part in an agile project environment with scrum, including close interactions with managers, designers and clients"
+          "desc":"Took part in an agile project environment with scrum, including close interactions with managers, designers and clients"
+        },
+        {
+          "desc":"Maintained and enhanced features of <a href='http://www.harley-davidson.com/content/h-d/en_US/dealer-locator.html' target='_blank'>Harley Davidson's dealer locator</a>, using Google Maps API and Mustache templating"
+        },
+        {
+          "desc":"Lead front-end developer for <a href='https://rentals.harley-davidson.com/' target='_blank'>Harley Davidson's rental booking site</a>, a project built using AngularJS"
         }
       ]
     },

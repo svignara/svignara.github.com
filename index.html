@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="ngSanitize">
+<html lang="en" ng-app="SuviApp">
   <head>
 
     <meta charset="utf-8">
@@ -12,17 +12,6 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-
-    <script src="assets/js/projects.json"></script>
-    <script src="assets/js/tabs.json"></script>
-    <script src="assets/js/bio.json"></script>
-    <script src="assets/js/skills.json"></script>
-    <script src="assets/js/experiences.json"></script>
-    <script src="assets/js/networks.json"></script>
-
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.min.js"></script>
-    <script src="assets/js/controllers.js"></script>
 
   </head>
   <body data-spy="scroll" data-target=".navbar" ng-cloak class="ng-cloak">
@@ -69,14 +58,14 @@
                 <div class="row-fluid" ng-repeat="project in projects | filter:query | orderBy:'name'">
                     <h2><a href="{{project.link}}" target="_blank">{{project.name}}</a></h2>
                     <h3>{{project.desc.title}}</h3>
-                    <p ng-bind-html="project.desc.content"></p>
+                    <p ng-bind-html="project.desc.content | showAsHTML"></p>
                     <h3>{{project.tech.title}}</h3>
                     <ul>
                       <li ng-repeat="techs in project.tech.items">{{techs.snippet}}</li>
                     </ul>
                     <h3>{{project.files.title}}</h3>
                     <ul>
-                        <li ng-repeat="files in project.files.items">{{files.title}}<p ng-bind-html="files.snippet"></p></li>
+                        <li ng-repeat="files in project.files.items">{{files.title}}<p ng-bind-html="files.snippet | showAsHTML"></p></li>
                     </ul>
                     <p><b>{{project.notes}}</b></p>
                 </div>
@@ -103,7 +92,7 @@
                             <table class="table table-bordered table-hover" ng-controller="BioCtrl">
                                 <tr ng-repeat="info in bio">
                                     <td>{{info.type}}</td>
-                                    <td ng-bind-html="info.value"></td>
+                                    <td ng-bind-html="info.value | showAsHTML"></td>
                                 </tr>
                             </table>
                         </div>
@@ -114,7 +103,7 @@
                                     <td>{{skill.heading}}</td>
                                     <td>
                                         <ul>
-                                            <li ng-repeat="specificSkill in skill.specificSkills" ng-bind-html="specificSkill.name"></li>
+                                            <li ng-repeat="specificSkill in skill.specificSkills" ng-bind-html="specificSkill.name | showAsHTML"></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -138,7 +127,7 @@
                               <div id="{{exp.contentId}}" class="collapse">
                                 <div class="accordion-inner experience-body">
                                     <ul>
-                                        <li ng-repeat="responsibility in exp.responsibilities">{{responsibility.desc}}</li>
+                                        <li ng-repeat="responsibility in exp.responsibilities" ng-bind-html="responsibility.desc | showAsHTML"></li>
                                     </ul>
                                 </div>
                               </div>
@@ -171,8 +160,16 @@
 
     </div>
 
+    <script src="assets/js/projects.json"></script>
+    <script src="assets/js/tabs.json"></script>
+    <script src="assets/js/bio.json"></script>
+    <script src="assets/js/skills.json"></script>
+    <script src="assets/js/experiences.json"></script>
+    <script src="assets/js/networks.json"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
 
   </body>
