@@ -19,7 +19,7 @@ var experiences = [
           "desc" : "Held presentations to the Front-end team on front-end technologies (such as: LESS, Jasmine, Responsive Web Design, Chrome DevTools, nodeJS)"
         },
         {
-          "desc" : "<b>Other notable projects:</b><ul><li><a href='http://www.bmo.com/main/personal/mortgages#Mortgage-affordability-calculator' target='_blank'>Mortgage Affordability Calculator</a></li><li><a href='http://www.bmo.com/main/search#q=bmo&page=1' target='_blank'>BMO.com Search functionality</a></li><li><a href='https://www.bmo.com/insurance/life-insurance/headstart-in-life' target='_blank'>Quote Widget for Insurance products</a></li><li><a href='http://www.bmo.com/main/personal/credit-cards' target='_blank'>Refactoring Credit card Apply Now logic</a></li><li><a href='http://www.bmo.com/main/personal/credit-cards/compare-tool' target='_blank'>Credit cards compare tool</a></li></ul>"
+          "desc" : "<b>Other notable projects:</b><ul><li><a href='http://www.bmo.com/main/personal/mortgages#Mortgage-affordability-calculator' target='_blank'>Mortgage Affordability Calculator</a></li><li><a href='http://www.bmo.com/main/search#q=bmo&page=1' target='_blank'>BMO.com Search functionality</a></li><li><a href='https://www.bmo.com/insurance/life-insurance/headstart-in-life' target='_blank'>Quote Widget for Insurance products</a></li><li><a href='http://www.bmo.com/main/personal/credit-cards' target='_blank'>Refactoring Credit card Apply Now logic</a></li><li><a href='http://www.bmo.com/main/personal/credit-cards/compare-tool' target='_blank'>Credit cards compare tool</a></li><li><a href='https://www.bmo.com/main/personal/bank-accounts' target='_blank'>Bank Accounts Redesign</a></li></ul>"
         }
       ]
     },{
