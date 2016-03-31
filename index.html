@@ -12,7 +12,9 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-
+    <script>
+      var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    </script>
   </head>
   <body data-spy="scroll" data-target=".navbar" ng-cloak class="ng-cloak">
     <!-- Responsive Navbar -->
@@ -151,7 +153,17 @@
                               </a>
                             </div>
                             <div>
-                              <a href="mailto:?cc=suvethan@gmail.com&subject=Let's%20Connect!&body=<table><tr><td><img src='https://lh3.googleusercontent.com/PjEToUOLn54Vft5oe2gyAlZvRg3fmBYf6vWUdeJG2QEjUKl-22yfqyGvCwokbVyR4ilhGVuEPuWmvXQFMkGORe7zOolRwKg4sE3KYb7QtrW0NH3edVzl9f3HZjZ3awT4H0Q5Yii-9_ta37bPYvLExmNGEG7JyqS7-BcM5EUF-c1VGMDziJcLUIiTACIyxpVD8Pm_do2RKTFaWWm3jfFzALRI5CgskI1pPLaZbGVOCJhy9yBE-0YSOf7fAZvEOEwGz9jEIS3g7Vvc3oz4H4K9BhfHRTHWHxBD1PFqTc33zU8fW0ZaK4mG2eVKru_HEJBQ0xDnxuRLO38DGEXUur2I48-lArygBxVD6avHuqPKls10JiT1eReVzhONpJ_ICjFDGQmRXkB9ueXuJpPI3gg29dkt8-7Argcb3QQIWC1beYKJkB7zs5eEsc_ddEwFyuJ5WBtktskpvqBYVEhWi79n5IqKOiVFrg86npuPH_wUSP7YEMmaRX8huCFu4p_swyHThJ7FO7kXZgQS44oeEsYUseeKwopxF3tHuWIymgDMcsfZG9K74WbTJfzCmYTzPEt3m9Xw=w494-h658-no' width='100'></td><td><b>Suvethan Vignarajah</b><br><i>Seasoned Front-end Developer</i><br><a href='mailto:suvethan@gmail.com'>suvethan@gmail.com</a><br><a href='tel:6472808780'>647-280-8780</a><br><a href='https://twitter.com/suvi_v'>@suvi_v</a></td></tr></table>" rel="nofollow">Save my contact</a>
+                              <script>
+                                var mailToBody;
+                                
+                                if (iOS){
+                                  mailToBody = "<table><tr><td><img src='https://lh3.googleusercontent.com/PjEToUOLn54Vft5oe2gyAlZvRg3fmBYf6vWUdeJG2QEjUKl-22yfqyGvCwokbVyR4ilhGVuEPuWmvXQFMkGORe7zOolRwKg4sE3KYb7QtrW0NH3edVzl9f3HZjZ3awT4H0Q5Yii-9_ta37bPYvLExmNGEG7JyqS7-BcM5EUF-c1VGMDziJcLUIiTACIyxpVD8Pm_do2RKTFaWWm3jfFzALRI5CgskI1pPLaZbGVOCJhy9yBE-0YSOf7fAZvEOEwGz9jEIS3g7Vvc3oz4H4K9BhfHRTHWHxBD1PFqTc33zU8fW0ZaK4mG2eVKru_HEJBQ0xDnxuRLO38DGEXUur2I48-lArygBxVD6avHuqPKls10JiT1eReVzhONpJ_ICjFDGQmRXkB9ueXuJpPI3gg29dkt8-7Argcb3QQIWC1beYKJkB7zs5eEsc_ddEwFyuJ5WBtktskpvqBYVEhWi79n5IqKOiVFrg86npuPH_wUSP7YEMmaRX8huCFu4p_swyHThJ7FO7kXZgQS44oeEsYUseeKwopxF3tHuWIymgDMcsfZG9K74WbTJfzCmYTzPEt3m9Xw=w494-h658-no' width='100'></td><td><b>Suvethan Vignarajah</b><br><i>Seasoned Front-end Developer</i><br><a href='mailto:suvethan@gmail.com'>suvethan@gmail.com</a><br><a href='tel:6472808780'>647-280-8780</a><br><a href='https://twitter.com/suvi_v'>@suvi_v</a></td></tr></table>";
+                                } else {
+                                  mailToBody = "Suvethan Vignarajah%0D%0ASeasoned Front-end Developer%0D%0Asuvethan@gmail.com%0D%0A647-280-8780%0D%0A@suvi_v"
+                                }
+                                
+                                document.write('<a href="mailto:?cc=suvethan@gmail.com&subject=Let\'s%20Connect!&body=" rel="nofollow">Save my contact</a>')
+                              </script>
                             </div>
                             </div>
                         </div>
