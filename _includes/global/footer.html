@@ -1,0 +1,22 @@
+<footer class="mdl-mini-footer">
+	<div class="mdl-mini-footer__left-section">
+		<div class="mdl-logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+		<ul class="mdl-mini-footer__link-list">
+			{% for cat in site.category_pages %}
+				{% if site.categories[cat.category-id] %}
+				<li><a href="{{ cat.url }}">{{ cat.category-name }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="mdl-mini-footer__right-section">
+		<ul class="social-icons">
+			<li><a href="https://twitter.com/suvi_v" class="social-icon" target="_blank"><i class="fa fa-twitter" ></i></a></li>
+			<li><a href="https://www.linkedin.com/in/svignarajah" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://stackoverflow.com/users/1417588/suvi-vignarajah" class="social-icon" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+			<li><a href="https://github.com/svignara" class="social-icon" target="_blank"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://jsfiddle.net/user/svigna/fiddles/" class="social-icon" target="_blank"><i class="fa fa-jsfiddle"></i></a></li>
+			<li><a href="/feed.xml" class="social-icon" target="_blank"><i class="fa fa-rss"></i></a></li>
+		</ul>
+	</div>
+</footer>

@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px){
+	.mdl-layout__header {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+.mdl-layout__header-row {
+	&.less-padding {
+		padding-left: 40px;
+	}
+}
+
+.mdl-layout__content {
+	&.grey-out {
+		background-color: #424242;
+
+		& .page-content {
+			background-color: #ffffff;
+		}
+	}
+	& .page-content {
+		padding: 0 0 25px;
+	}
+}
+
+.mdl-mini-footer .mdl-logo a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.mdl-card {
+	width: 100%;
+}
+
+.post-card {
+	&__date {
+		padding-top: 0;
+	}
+}

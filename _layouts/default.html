@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+    {% include global/head.html %}
+
+    <body>
+
+        <div class="mdl-layout mdl-js-layout">
+
+            {% include global/header.html %}
+
+            <main class="mdl-layout__content grey-out">
+
+                <div class="page-content">
+
+                    <div class="mdl-grid">
+
+                        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-cell--12-col">
+
+                            <div>
+                                {{ content }}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {% include global/comments.html %}
+
+                </div>
+
+                {% include global/footer.html %}
+
+            </main>
+
+
+            {% include global/scripts.html %}
+
+        </div>
+
+    </body>
+
+</html>

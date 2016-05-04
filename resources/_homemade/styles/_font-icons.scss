@@ -1,0 +1,80 @@
+@import url(http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css);
+
+ul.social-icons {
+	padding:0;
+	list-style: none;
+	margin-top: 10px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.social-icon {
+	color: #fff;
+}
+
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+}
+
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.mdl-mini-footer__right-section {
+	ul.social-icons {
+		.social-icon {
+			.fa {
+				-o-transition:.5s;
+			  	-ms-transition:.5s;
+			  	-moz-transition:.5s;
+			  	-webkit-transition:.5s;
+			  	transition: .5s;
+			  	padding: 10px 11px;
+
+				&.fa-twitter {
+
+					&:hover {
+						background-color: #00aced;
+					}
+				}
+
+				&.fa-rss {
+
+					&:hover {
+						background-color: #eb8231;
+					}
+				}
+
+				&.fa-linkedin {
+
+					&:hover {
+						background-color: #0073a4;
+					}
+				}
+
+				&.fa-github {
+
+					&:hover {
+						background-color: #e5e5e5;
+					}
+				}
+
+				&.fa-stack-overflow {
+
+					&:hover {
+						background-color: #F48024;
+					}
+				}
+
+				&.fa-jsfiddle {
+
+					&:hover {
+						background-color: #1C90F3;
+					}
+				}
+
+			}
+		}
+	}
+}

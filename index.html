@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>Suvi's House</h1>
+<p>{{site.description}}</p>
+
+{% for cat in site.category_pages %}
+	{% if site.categories[cat.category-id] %}
+		<h2>{{ cat.category-name }}</h2>
+		<div class="mdl-grid">
+			{% for post in site.categories[cat.category-id] limit:6 %}
+			<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-mobile">
+			{% include components/post-card.html data=post %}
+			</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+{% endfor %}
