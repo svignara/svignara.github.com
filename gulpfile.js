@@ -45,7 +45,9 @@ gulp.task('serve', function() {
     browserSync.init({ server: { baseDir: '_site/' } });
     gulp.watch('_src/homemade/styles/*.scss', ['styles']);
     gulp.watch('_src/homemade/scripts/*.js', ['scripts']);
-    gulp.watch(['_site/**/*.*']).on('change', browserSync.reload);
+    gulp.watch(['_site/index.html']).on('change', function(){
+        browserSync.reload();
+    });
 });
 
 gulp.task('default', ['styles', 'scripts', 'build', 'serve']);
