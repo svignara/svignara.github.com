@@ -10,13 +10,19 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 gulp.task('build', function() {
-    exec('jekyll build --watch', function(err, stdout, stderr) {
+    exec('JEKYLL_ENV=development jekyll build --watch', function(err, stdout, stderr) {
+        console.log(stdout);
+    });
+});
+
+gulp.task('build-production', function() {
+    exec('JEKYLL_ENV=production jekyll build', function(err, stdout, stderr) {
         console.log(stdout);
     });
 });
 
 gulp.task('styles', function(){
-	return gulp.src('./resources/_homemade/styles/main.scss')
+	return gulp.src('./_src/homemade/styles/main.scss')
 		.pipe(plumber())
 		.pipe(sass().on('error', sass.logError))
 	    .pipe(gulp.dest('./resources/homemade/styles'))
@@ -24,7 +30,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-	return gulp.src('./resources/_homemade/scripts/*.js')
+	return gulp.src('./_src/homemade/scripts/*.js')
 		.pipe(concat('main.js'))
 		.pipe(gulp.dest('./resources/homemade/scripts'))
 		.pipe(uglify())
@@ -37,9 +43,11 @@ gulp.task('scripts', function(){
 
 gulp.task('serve', function() {
     browserSync.init({ server: { baseDir: '_site/' } });
-    gulp.watch('resources/_homemade/styles/*.scss', ['styles']);
-    gulp.watch('resources/_homemade/scripts/*.js', ['scripts']);
+    gulp.watch('_src/homemade/styles/*.scss', ['styles']);
+    gulp.watch('_src/homemade/scripts/*.js', ['scripts']);
     gulp.watch(['_site/**/*.*']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['styles', 'scripts', 'build', 'serve']);
+
+gulp.task('build-prod', ['styles', 'scripts', 'build-production']);
