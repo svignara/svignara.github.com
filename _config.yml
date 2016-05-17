@@ -27,3 +27,6 @@ collections:
   category_pages:
     output: true
     permalink: /:path/
+
+gems:
+  - jemoji

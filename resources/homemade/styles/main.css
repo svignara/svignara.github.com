@@ -144,6 +144,12 @@
   .highlight .il {
     color: #099; }
 
+code.highlighter-rouge {
+  background: #F1F1F1;
+  padding: 2px 3px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
 ul.social-icons {
   padding: 0;
   list-style: none;
