@@ -2,7 +2,7 @@
 /**
  * Syntax highlighting styles
  */
-@import url(https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css);
+@import url(/resources/vendor/font-awesome-4.6.3/css/font-awesome.min.css);
 .highlight {
   background: #F1F1F1;
   padding: 10px 25px;
