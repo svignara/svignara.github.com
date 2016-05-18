@@ -187,6 +187,12 @@ ul.social-icons {
   .mdl-mini-footer__right-section ul.social-icons .social-icon .fa.fa-jsfiddle:hover {
     background-color: #1C90F3; }
 
+.mdl-components__note {
+  padding: 15px 25px;
+  background-color: #FFF9C4; }
+  .mdl-components__note p:last-child {
+    margin-bottom: 0; }
+
 @media screen and (max-width: 1024px) {
   .mdl-layout__header {
     display: -webkit-flex;
