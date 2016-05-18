@@ -5,6 +5,6 @@
     <div class="mdl-card__supporting-text post-card__date">{{ include.data.date | date: "%b %-d, %Y" }}</div>
     <div class="mdl-card__supporting-text">{{ include.data.description }}</div>
     <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ include.data.url }}">Read more</a>
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ include.data.url | prepend: site.baseurl | prepend: site.url }}">Read more</a>
     </div>
 </article>

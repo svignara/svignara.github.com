@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 gulp.task('build', function() {
-    exec('JEKYLL_ENV=development jekyll build --watch', function(err, stdout, stderr) {
+    exec('JEKYLL_ENV=development jekyll build --config _config.yml,_config-dev.yml --watch', function(err, stdout, stderr) {
         console.log(stdout);
     });
 });

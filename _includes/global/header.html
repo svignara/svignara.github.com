@@ -1,22 +1,22 @@
 <header class="mdl-layout__header">
 	<div class="mdl-layout__header-row less-padding">
-		<a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+		<a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/">{{ site.title }}</a>
 		<div class="mdl-layout-spacer"></div>
 		<nav class="mdl-navigation mdl-layout--large-screen-only">
 			{% for cat in site.category_pages %}
 				{% if site.categories[cat.category-id] %}
-				<a class="mdl-navigation__link" href="{{ cat.url }}">{{ cat.category-name }}</a>
+				<a class="mdl-navigation__link" href="{{ cat.url | prepend: site.baseurl | prepend: site.url }}">{{ cat.category-name }}</a>
 				{% endif %}
 			{% endfor %}
 		</nav>
     </div>
 </header>
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-	<a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+	<a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/">{{ site.title }}</a>
 	<nav class="mdl-navigation">
 		{% for cat in site.category_pages %}
 			{% if site.categories[cat.category-id] %}
-			<a class="mdl-navigation__link" href="{{ cat.url }}">{{ cat.category-name }}</a>
+			<a class="mdl-navigation__link" href="{{ cat.url | prepend: site.baseurl | prepend: site.url }}">{{ cat.category-name }}</a>
 			{% endif %}
 		{% endfor %}
 	</nav>
