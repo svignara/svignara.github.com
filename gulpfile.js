@@ -30,7 +30,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-	return gulp.src('./_src/homemade/scripts/*.js')
+	return gulp.src(['./_src/homemade/scripts/experiments/*.js', './_src/homemade/scripts/core.js'])
 		.pipe(concat('main.js'))
 		.pipe(gulp.dest('./resources/homemade/scripts'))
 		.pipe(uglify())
@@ -43,8 +43,8 @@ gulp.task('scripts', function(){
 
 gulp.task('serve', function() {
     browserSync.init({ server: { baseDir: '_site/' } });
-    gulp.watch('_src/homemade/styles/*.scss', ['styles']);
-    gulp.watch('_src/homemade/scripts/*.js', ['scripts']);
+    gulp.watch('_src/homemade/styles/**/*.scss', ['styles', browserSync.reload]);
+    gulp.watch('_src/homemade/scripts/**/*.js', ['scripts', browserSync.reload]);
     gulp.watch(['_site/index.html']).on('change', browserSync.reload);
 });
 

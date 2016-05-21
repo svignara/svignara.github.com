@@ -12,9 +12,11 @@ layout: default
 		<h2>{{ cat.category-name }}</h2>
 		<div class="mdl-grid">
 			{% for post in site.categories[cat.category-id] limit:6 %}
+			{% unless post.dontShow %}
 			<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-mobile">
 			{% include components/post-card.html data=post %}
 			</div>
+			{% endunless %}
 			{% endfor %}
 		</div>
 	{% endif %}

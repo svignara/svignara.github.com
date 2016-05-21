@@ -6,8 +6,10 @@ layout: default
 
 <div class="mdl-grid">
 {% for post in site.categories[page.category-id] %}
+	{% unless post.dontShow %}
 	<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-mobile">
 	{% include components/post-card.html data=post %}
 	</div>
+	{% endunless %}
 {% endfor %}
 </div>
