@@ -67,6 +67,9 @@ var SpeedForce = (function(){
 
 			stopBtn.addEventListener('click', function(){
 				navigator.geolocation.clearWatch(watchID);
+				var output = document.createElement('p');
+				output.innerHTML = '---Done---';
+				resultsEl.appendChild(output);
 			});
 		}
 
