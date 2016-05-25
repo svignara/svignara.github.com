@@ -4,9 +4,6 @@ layout: default
 
 <h1>Suvi's House</h1>
 <p>{{site.description}}</p>
-<div class="mdl-components__note">
-	<p>I am sharing a live stream of Google I/O 2016 over <a href="{{ "/google-io-2016" | prepend: site.baseurl | prepend: site.url }}">here</a>, feel free to watch!<br>To learn more about Google I/O 2016, click <a href="https://google.com/io" target="_blank">here</a>.</p>
-</div>
 {% for cat in site.category_pages %}
 	{% if site.categories[cat.category-id] %}
 		<h2>{{ cat.category-name }}</h2>
