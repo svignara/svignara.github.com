@@ -8,10 +8,16 @@ dontShow : true
 comments: true
 ---
 
+<style>
+	label {
+		display: block;
+		margin-bottom: 30px;
+	}
+</style>
 <form name="startRun">
-	<label>Distance: <input type="number" name="distance" required></label>
-	<input type="submit" name="submit" value="Run!" disabled="true">
-	<input type="button" name="stop" value="Stop" disabled="true">
+	<label>Get start position: <button type="button" name="startPos">Get start position</button></label>
+	<label>Run: <button type="button" name="run" disabled="true">Run</button></label>
+	<label>Stop: <button type="button" name="stop" disabled="true">Stop</button></label>
 </form>
 
 <div id="results" style="display:none;">
