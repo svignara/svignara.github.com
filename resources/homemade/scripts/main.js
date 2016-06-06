@@ -108,9 +108,10 @@ var SpeedForce = (function(){
 			var	lat1 = startPos.lat.toRadians(),
 				lat2 = stopPos.lat.toRadians(),
 				a = (Math.sin(dLat/2) * Math.sin(dLat/2)) + (Math.cos(lat1) * Math.cos(lat2) * (Math.sin(dLng/2) * Math.sin(dLng/2))),
-				c =  2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)),
-				totalDistance = Math.abs((R * c) * 1000),
-				avgSpeed = totalDistance / totalTime;
+				c =  2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+			totalDistance = Math.abs((R * c) * 1000),
+			avgSpeed = totalDistance / totalTime;
 		},
 		displayResults : function(){
 			var stopPosContainer = document.createElement('div'),
@@ -118,7 +119,7 @@ var SpeedForce = (function(){
 				totalDistContainer = document.createElement('div'),
 				avgSpeedContainer = document.createElement('div');
 
-			stopPosContainer.innerHTML = 'Stop: (' + startPos.lat + ', ' + startPos.lng + ')';
+			stopPosContainer.innerHTML = 'Stop: (' + stopPos.lat + ', ' + stopPos.lng + ')';
 			totalTimeContainer.innerHTML = 'Time elapsed: ' + totalTime + ' s';
 			totalDistContainer.innerHTML = 'Total distance: ' + totalDistance + ' m';
 			avgSpeedContainer.innerHTML = 'Average Speed: ' + avgSpeed + ' m/s';
