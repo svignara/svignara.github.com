@@ -5,9 +5,8 @@ var SpeedForce = (function(){
 	var formEl,
 		startPosBtn,
 		runBtn,
-		/*stopBtn,*/
-		evtStart = ("ontouchstart" in window) ? 'touchstart' : 'mousedown',
-		evtEnd = ("ontouchstart" in window) ? 'touchend' : 'mouseup',
+		stopBtn,
+		resetBtn,
 		resultsEl,
 		startPos,
 		stopPos,
@@ -32,12 +31,14 @@ var SpeedForce = (function(){
 			formEl = document.forms.startRun;
 			startPosBtn = formEl.startPos;
 			runBtn = formEl.run;
-			//stopBtn = formEl.stop;
+			stopBtn = formEl.stop;
+			resetBtn = formEl.reset;
 			resultsEl = document.getElementById('results');
 
 			self.startPositionListener();
 			self.runListener();
 			self.stopListener();
+			self.resetListener();
 		},
 		startPositionListener : function(){
 			var self = this;
@@ -60,6 +61,9 @@ var SpeedForce = (function(){
 				};
 				self.displayStartPos();
 				self.enableControls();
+				runBtn.classList.toggle('show');
+				startPosBtn.disabled = true;
+				resetBtn.disabled = false;
 			});
 		},
 		displayStartPos : function(){
@@ -70,20 +74,23 @@ var SpeedForce = (function(){
 		},
 		enableControls : function(){
 			runBtn.disabled = false;
-			//stopBtn.disabled = false;
+			stopBtn.disabled = false;
 		},
 		runListener : function(){
 			var self = this;
 
-			runBtn.addEventListener(evtStart, function(evt){
+			runBtn.addEventListener('click', function(evt){
 				startTime = Date.now();
 				console.log('started: ' + startTime);
+				runBtn.classList.toggle('show');
+				stopBtn.classList.toggle('show');
+				resetBtn.disabled = true;
 			});
 		},
 		stopListener : function(){
 			var self = this;
 
-			runBtn.addEventListener(evtEnd, function(evt){
+			stopBtn.addEventListener('click', function(evt){
 				stopTime = Date.now();
 				totalTime = (stopTime - startTime) / 1000;
 				navigator.geolocation.getCurrentPosition(function(position){
@@ -93,6 +100,8 @@ var SpeedForce = (function(){
 					};
 					self.calculateResults();
 					self.displayResults();
+					stopBtn.classList.toggle('show');
+					resetBtn.disabled = true;
 				});
 			});
 		},
@@ -130,6 +139,18 @@ var SpeedForce = (function(){
 			resultsEl.appendChild(totalTimeContainer);
 			resultsEl.appendChild(totalDistContainer);
 			resultsEl.appendChild(avgSpeedContainer);
+		},
+		resetListener : function(){
+			var self = this;
+
+			resetBtn.addEventListener('click', function(evt){
+				resultsEl.style.display = 'none';
+				resultsEl.innerHTML = '';
+				runBtn.classList.remove('show');
+				stopBtn.classList.remove('show');
+				resetBtn.disabled = true;
+				startPosBtn.disabled = false;
+			});
 		}
 
 	}

@@ -9,19 +9,23 @@ comments: true
 ---
 
 <style>
-	label {
-		display: block;
+	.mdl-button {
 		margin-bottom: 30px;
 	}
-	.control-buttons {
+	.mdl-button.control-buttons {
 		height: 100px;
 		width: 100px;
+		display: none;
+	}
+	.mdl-button.control-buttons.show {
+		display: block;
 	}
 </style>
 <form name="startRun">
-	<label>Get start position: <button type="button" name="startPos" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Get start position</button></label>
-	<label>Run: <button type="button" name="run" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent control-buttons">Run</button></label>
-	<!--<label>Stop: <button type="button" name="stop" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent control-buttons">Stop</button></label>-->
+	<button type="button" name="startPos" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Get start position</button>
+	<button type="button" name="reset" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" disabled="true">Reset</button>
+	<button type="button" name="run" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent control-buttons">Run</button>
+	<button type="button" name="stop" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored control-buttons">Stop</button>
 </form>
 
 <div id="results" style="display:none;">
