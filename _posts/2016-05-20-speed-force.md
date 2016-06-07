@@ -13,11 +13,15 @@ comments: true
 		display: block;
 		margin-bottom: 30px;
 	}
+	.control-buttons {
+		height: 100px;
+		width: 100px;
+	}
 </style>
 <form name="startRun">
-	<label>Get start position: <button type="button" name="startPos">Get start position</button></label>
-	<label>Run: <button type="button" name="run" disabled="true">Run</button></label>
-	<label>Stop: <button type="button" name="stop" disabled="true">Stop</button></label>
+	<label>Get start position: <button type="button" name="startPos" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Get start position</button></label>
+	<label>Run: <button type="button" name="run" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent control-buttons">Run</button></label>
+	<!--<label>Stop: <button type="button" name="stop" disabled="true" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent control-buttons">Stop</button></label>-->
 </form>
 
 <div id="results" style="display:none;">

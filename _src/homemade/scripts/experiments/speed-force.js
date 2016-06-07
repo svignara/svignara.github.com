@@ -5,7 +5,9 @@ var SpeedForce = (function(){
 	var formEl,
 		startPosBtn,
 		runBtn,
-		stopBtn,
+		/*stopBtn,*/
+		evtStart = ("ontouchstart" in window) ? 'touchstart' : 'mousedown',
+		evtEnd = ("ontouchstart" in window) ? 'touchend' : 'mouseup',
 		resultsEl,
 		startPos,
 		stopPos,
@@ -30,7 +32,7 @@ var SpeedForce = (function(){
 			formEl = document.forms.startRun;
 			startPosBtn = formEl.startPos;
 			runBtn = formEl.run;
-			stopBtn = formEl.stop;
+			//stopBtn = formEl.stop;
 			resultsEl = document.getElementById('results');
 
 			self.startPositionListener();
@@ -68,12 +70,12 @@ var SpeedForce = (function(){
 		},
 		enableControls : function(){
 			runBtn.disabled = false;
-			stopBtn.disabled = false;
+			//stopBtn.disabled = false;
 		},
 		runListener : function(){
 			var self = this;
 
-			runBtn.addEventListener('click', function(evt){
+			runBtn.addEventListener(evtStart, function(evt){
 				startTime = Date.now();
 				console.log('started: ' + startTime);
 			});
@@ -81,7 +83,7 @@ var SpeedForce = (function(){
 		stopListener : function(){
 			var self = this;
 
-			stopBtn.addEventListener('click', function(evt){
+			runBtn.addEventListener(evtEnd, function(evt){
 				stopTime = Date.now();
 				totalTime = (stopTime - startTime) / 1000;
 				navigator.geolocation.getCurrentPosition(function(position){
