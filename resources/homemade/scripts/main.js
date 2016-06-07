@@ -56,8 +56,8 @@ var SpeedForce = (function(){
 
 			navigator.geolocation.getCurrentPosition(function(position) {
 				startPos = {
-					lat : position.coords.latitude,
-					lng : position.coords.longitude
+					lat : Math.round(position.coords.latitude * 1000000) / 1000000,
+					lng : Math.round(position.coords.longitude * 1000000) / 1000000
 				};
 				self.displayStartPos();
 				self.enableControls();
@@ -95,8 +95,8 @@ var SpeedForce = (function(){
 				totalTime = (stopTime - startTime) / 1000;
 				navigator.geolocation.getCurrentPosition(function(position){
 					stopPos = {
-						lat : position.coords.latitude,
-						lng : position.coords.longitude
+						lat : Math.round(position.coords.latitude * 1000000) / 1000000,
+						lng : Math.round(position.coords.longitude * 1000000) / 1000000
 					};
 					self.calculateResults();
 					self.displayResults();
