@@ -101,7 +101,7 @@ var SpeedForce = (function(){
 					self.calculateResults();
 					self.displayResults();
 					stopBtn.classList.toggle('show');
-					resetBtn.disabled = true;
+					resetBtn.disabled = false;
 				});
 			});
 		},
