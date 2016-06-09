@@ -132,8 +132,8 @@ var SpeedForce = (function(){
 
 			stopPosContainer.innerHTML = 'Stop: (' + stopPos.lat + ', ' + stopPos.lng + ')';
 			totalTimeContainer.innerHTML = 'Time elapsed: ' + totalTime + ' s';
-			totalDistContainer.innerHTML = 'Total distance: ' + totalDistance + ' m';
-			avgSpeedContainer.innerHTML = 'Average Speed: ' + avgSpeed + ' m/s';
+			totalDistContainer.innerHTML = 'Total distance: ' + totalDistance + ' m -- (' + (totalDistance/1000) + ' m)';
+			avgSpeedContainer.innerHTML = 'Average Speed: ' + avgSpeed + ' m/s -- (' + (avgSpeed * 3.6) + ' km/h)';
 
 			resultsEl.appendChild(stopPosContainer);
 			resultsEl.appendChild(totalTimeContainer);
